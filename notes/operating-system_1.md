@@ -1,164 +1,30 @@
 # オペレーティングシステム
 
-### 20190408
+### 20190411
 
-## 成績について
-- 最終試験一発
-- レポート・出席無し
+## Identifier
 
-## 概要
+- what to access, but not where to access
 
-Busを介してメモリー空間をアクセスする.  
-- CPU: プログラム実行
-- メモリ: プログラム管理
-- ディスク
-- USBコントローラ
-- グラフィックコントローラー
+## History of OS
 
-## メモリー空間
+- Set of instructions to tell a computer what to do
+- von Neumann architecture... programs itself could be stored in memory; programs itself is data
+- First memory... used iron oxide and magnetization
+- IBM System/360... portable software + multiprogramming
+- termlinals, ctss (compatible time sharing system), multics, unix
+- PARC (Par Alto Research Center)... appearance of HCI
+	- Doug Engelbart, Butler Lampson, Charles Thacker
+- Win95... spread of internet, but not really when seen on the moore's law
+- Mach... microkernel
 
-- メモリーアドレス: 空間の場所を示す.  
-- bit幅はほとんどの場合, CPUのbit幅と同じ.
+## Computing today
 
-## メモリ
-
-- 主にプログラムやデータが記憶される
-- 番地が付与され, 1つのアドレスに1バイトが対応する. 
-- これはデバイス管理 (キーボードなど) に関しても同じ.  
-- RAM (Random Access Memory) , ディスクコントローラー, USBコントローラー, グラフィックコントローラー, ROM (Read Only Memory) などに割り当てられてい などに割り当てられている.
-
-## CPU内部構成
-
-### レジスタ
-- CPUに内蔵されメモリと比べ格段に高速にあっクセスできる高速回路
-- メモリでは遅いのだ!
-- bit幅はCPUのbit幅と同じ
-- 汎用レジスタ
-- セグメントレジスタ: メモリアクセスするときにページテーブルをコントロールするもの
-- スタックポインタ: 変数はスタックで管理されているので, これを管理するもの
-- プログラムカウンタ: 今CPUがどのインストラクションを実行しているのかを指す
-- ステータスレジスタ
-
-### Intel CPUレジスタ
-- 後方互換ができるように, 16bit->32bit->64bitとアップグレードされるたびにレジスタの名前をAX->EAX->RAXと拡張している.
-
-|ストレージ|アクセス時間|サイズ|
-|::|::|::|
-|レジスタ|0.6ns|64bytes|
-|L1 Cache|0.5ns|64KB|
-|L2|10ns|4MB|
-|Main memory|100ns|4GB|
-
-→ キャッシュのマネジメントがとても大事
-
-- 2.5GHzでプログラムを実行するとメインメモリへのアクセスがおいつかない
-
-### ALUとアキュムレータ
-
-- ALU (Arithmetic Logic Unit), 論理演算装置
-	- 四則演算, 論理演算, ビットシフト操作
-- アキュムレータ
-	- ALUの演算結果を保持するレジスタ
-	- 古いコンピュータアーキテクチャで使用される (昔はAXレジスタ限定だった)
-
-### PDP-11 Instruction Summary
-- コンピュータはメモリ空間やALUでの単純な計算を逐次計算しているに過ぎない
-
-## CPUの基本動作
-1. プログラムカウンタで支持されたメモリ番地から命令を読み込む
-2. 命令を解析する
-3. 命令を実行する: 指定されたiメモリの内容をCPUのレジスタに転送する, 2つのレジスタ間で演算を行いその結果を他のレジスタに転送する, レジスタの内容を指定したメモリに転送する, など
-4. プログラムカウンタを次に進める (カウントアップする) 
-5. 1. に戻る
-
-CPUのしごとはメモリとレジスタ間の転送しか行っていない! 量子コンピュータなどを除けば同じ論理で動いている
-
-## OSとは
-
-- リソースの管理
-- 機能の抽象化: ユーザーがいちいちメモリとかについて気にしなくて良いようにするために
-	- 名前とか識別子
-	- アクセス方法
-	- 低レベル操作の抽象化
-		- デバイスレベルでのI/Oの隠蔽
-	- デザインレベルでの抽象化
-		- UNIXにおけるファイルとしての抽象化
-		- BITNETのカードリーダとプリンタ: IBMがつかっていた通信の方法
-		- ネットワーク機能のsocket interface
-
-## コンピュータの歴史とOS
-
-## 真空管と配線盤 (1945-55) 
-
-- ENIAC (UPenn, Mauchley)
-- Neumann
-	- プログラム内蔵方式の論文を発表, ストアードプログラムの考案者
-	- これがのちにノイマン型と呼ばれるように
-
-## トランジスタとバッチシステム (1955-65) 
-
-- バッチシステム
-	- ジョブ単位で, 処理して次の処理をする
-	- IBM 1401: かーどからテープへジョブを読み込む
-	- IBM 7094: テープからジョブを読み込み実行, 結果を別のテープに書き出す
-	- IBM 1401: テープから結果を読み出し, プリントアウト
-- 1401: キャラクタハンドリングが徳井な計算機
-- 7094: ワード単位で処理ができる計算機
-
-## ICとマルチプログラミング (1965-1980) 
-
-- トランジスタ -> IC (小型, 高性能化)
-- IBM System/360
-
-## バッチシステムとTSS
-
-- IBM OS 360/370
-	- IBMのSystem360/370用に開発されたOS
-	- 基本バッチシステム
-	- マルチプログラミング
-- CTSS(MIT) IVM 7094をつかって開発されたTSSシステム
-- MIT, ベル研, GEがMUTLTICSを開発
-- めちゃくちゃ崇高な概念だけど重すぎた
-- なので軽いものを作りたい...
-- -> ベル研でUNIXが誕生!
-- UNIX v6がオープンソースの概念を提唱
-- -> "UNIX Free or Die"
-- 1981年, 日立と三菱の写真がIBMのスパイ容疑で逮捕 (知財を盗み, ものまねをしてビジネスをした) 
-
-## 1980年代 - 現代
-
-- ワークステーション
-	- マウス, ビットマップディスプレイ, ネットワーク
-	- UNIX
-- パソコン
-	- IBM PC
-	- DOS BASIC -> MS DOS
-- マッキントッシュ
-	- mac
-
-## OSの系譜
-- メインフレーム
-	- IBM OS360/370 - CTSS
-- ミニコン
-	- DEC RT11 -> VMS
-	- Multics -> UNIX
-- ワークステーション
-	- Xerox, Sun Station
-- パソコン
-
-## UNIXの系譜
-
-- Multics (MIT, Bell Lab, GE) -> UNIX v6 (Bell Labs) on DEC PDP
-- BSD (UC Berkeley)
-	- Bell Labからのソースコードを元に, 2BSD, 4BSD
-	- 仮想メモリ, TCP/IPプロトコル
-
-## なぜ系譜が必要なのか?
-
-- アプリケーションソフトウェアの互換性
-
-
-
-
+- We are in the Moore's Law period
+	- no more clock speed increases
+- The Google era: no need to organize data
+- Asynchronous computing
+- virtualization of machines and even networks
+- mobile, ubiquitous computing
 
 

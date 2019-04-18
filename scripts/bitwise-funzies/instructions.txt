@@ -1,0 +1,26 @@
+Bitwise Funzies
+In this homework, you’ll stretch your legs, refreshing your
+understanding of C, and learning about the basic hardware data types.
+You will be given a file called bitwise-funzies.c.
+You will have several files. Please put them in a .tgz or .zip file,
+no other file formats will be accepted!
+Incude a README.txt file that tells me what files are included and
+what they are, e.g. which of the four problems below they are the
+answer to.
+1. Compile and execute the program as written.
+Capture the output and submit it (capturing it into a text file is
+easiest). (This part we probably did in class, but you are to
+submit it as part of your homework.)
+2. Extend the program to print sizeof(int). Tell me what that
+*means*. How many bits is an int on your system?
+3. The examples in the file you are given work (or at least work best)
+for 32-bit integers. Extend the program to work with 64-bit
+integers. (Most modern laptop CPUs will support such datatypes.)
+What datatype do you have to declare? (Hint: use sizeof() to
+confirm.) (Second hint: make liberal use of standard C header
+files and type definitions, such as the CHAR_BIT we use.)
+4. Alongside that, report the minimum and maximum values for an
+integer. (Hint again: check out limits.h.)
+For all of the above, include both your source code and the output!
+If you have only one program that does all of it, that’s okay, please
+tell me in the README.txt you include.

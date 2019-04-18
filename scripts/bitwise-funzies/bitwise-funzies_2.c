@@ -28,6 +28,9 @@ void binaryprintf(unsigned int number, int len) {
     }
     // Print newline at the end
     printf("\n");
+
+    // Print sizeof (int)
+    printf("Your sizeof(int) for the above number was %lu \n", sizeof(int));
 }
 
 int main(int argc, char **argv) {

@@ -1,4 +1,4 @@
-Assignments 1-4 corresponds to files bitwise-funzies_{1-4}.*
+Assignments 1-4 corresponds to files bitwise-funzies_{1,2,3-4}.* (assingments 3-4 are combined in one files)
 Each assignment holds *.c, *.out, *.txt, where *.c is compiled as *.out and its output is saved to *.txt
 
 Explanation for assignment 2

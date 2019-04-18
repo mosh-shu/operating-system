@@ -30,7 +30,7 @@ void binaryprintf(unsigned int number, int len) {
     printf("\n");
 
     // Print sizeof (int)
-    printf("Your sizeof(int) for the above number was %lu \n", sizeof(int));
+    printf("Your sizeof(int) for the above number was %lu.\nThis datatype allows us to express numbers from %d to %d.\n", sizeof(int), INT_MIN, INT_MAX);
 }
 
 int main(int argc, char **argv) {

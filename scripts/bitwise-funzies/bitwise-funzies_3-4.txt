@@ -1,0 +1,99 @@
+CHAR_BIT on your system: 8
+ 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+ 11111111 11111111 11111111 11111111 11111111 11111111 11111111 11111111
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+ 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+ 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+Start with 1, shift it left.
+Decimal value of x is
+2
+Binary value of x is
+ 00000000 00000000 00000000 00000011 11111111 11111111 11111111 11111110
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+Shift it left again.
+Decimal value of x is
+4
+Binary value of x is
+ 00000000 00000000 00000000 00000111 11111111 11111111 11111111 11111100
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+OR our value with another number, 0x00000001.
+Decimal value of x is
+5
+Binary value of x is
+ 00000000 00000000 00000000 00000111 11111111 11111111 11111111 11111111
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+AND our value with another number, 0x00000004.
+Decimal value of x is
+4
+Binary value of x is
+ 00000000 00000000 00000000 00000111 11111111 11111111 11111111 11111100
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+Shift right.
+Decimal value of x is
+2
+Binary value of x is
+ 00000000 00000000 00000000 00000011 11111111 11111111 11111111 11111110
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+Shift right again.
+Decimal value of x is
+1
+Binary value of x is
+ 00000000 00000000 00000000 00000001 11111111 11111111 11111111 11111111
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+
+------------ now with more bits set! --------------
+
+Decimal value of x is
+305419896
+Hex value of x is 
+0x12345678
+Binary value of x is
+ 00011111 11111111 11111111 11111111 11111111 11111111 11111111 11111000
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+The low-order six bits:
+ 111000
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+Masking to keep the high-order six bits (on a 32-bit system):
+ 00011111 11111111 11111111 11111111 11110000 00000000 00000000 00000000
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+Those six bits as a six-bit field:
+ 000100
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+The 20 bits in between:
+ 00000011 11111111 11111111 11111111 11111111 11111111 11111111 11000000
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+
+Shifted down as a field:
+ 10001101 00010101 1001
+Your sizeof(long) for the above number was 8.
+This datatype allows us to express numbers from -9223372036854775808 to 9223372036854775807 .
+

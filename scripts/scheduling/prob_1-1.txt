@@ -4,9 +4,9 @@ ARG max_run 40
 ARG max_wset 200
 ARG job_list 
 ARG affinity 
-ARG per_cpu_queues False
-ARG num_cpus 2
-ARG quantum 5
+ARG per_cpu_queues True
+ARG num_cpus 1
+ARG quantum 10
 ARG peek_interval 30
 ARG warmup_time 10
 ARG cache_size 100
@@ -20,39 +20,34 @@ ARG compute True
 Job name:0 run_time:0 working_set_size:160
 Job name:1 run_time:30 working_set_size:50
 
-Scheduler central queue: ['0', '1']
+Scheduler CPU 0 queue: ['0', '1']
 
-   0   0 [  0] cache[  ]     1 [ 29] cache[  ]     Q:     
-   1   - [   ] cache[  ]     1 [ 28] cache[  ]     Q:     
-   2   - [   ] cache[  ]     1 [ 27] cache[  ]     Q:     
-   3   - [   ] cache[  ]     1 [ 26] cache[  ]     Q:     
-   4   - [   ] cache[  ]     1 [ 25] cache[  ]     Q:     
--------------------------------------------------
-   5   1 [ 24] cache[  ]     - [   ] cache[  ]     Q:     
-   6   1 [ 23] cache[  ]     - [   ] cache[  ]     Q:     
-   7   1 [ 22] cache[  ]     - [   ] cache[  ]     Q:     
-   8   1 [ 21] cache[  ]     - [   ] cache[  ]     Q:     
-   9   1 [ 20] cache[  ]     - [   ] cache[  ]     Q:     
--------------------------------------------------
-  10   1 [ 19] cache[  ]     - [   ] cache[  ]     Q:     
-  11   1 [ 18] cache[  ]     - [   ] cache[  ]     Q:     
-  12   1 [ 17] cache[  ]     - [   ] cache[  ]     Q:     
-  13   1 [ 16] cache[  ]     - [   ] cache[  ]     Q:     
-  14   1 [ 15] cache[ w]     - [   ] cache[  ]     Q:     
--------------------------------------------------
-  15   1 [ 13] cache[ w]     - [   ] cache[  ]     Q:     
-  16   1 [ 11] cache[ w]     - [   ] cache[  ]     Q:     
-  17   1 [  9] cache[ w]     - [   ] cache[  ]     Q:     
-  18   1 [  7] cache[ w]     - [   ] cache[  ]     Q:     
-  19   1 [  5] cache[ w]     - [   ] cache[  ]     Q:     
--------------------------------------------------
-  20   1 [  3] cache[ w]     - [   ] cache[  ]     Q:     
-  21   1 [  1] cache[ w]     - [   ] cache[  ]     Q:     
-  22   1 [  0] cache[ w]     - [   ] cache[  ]     Q:     
+   0   0 [  0] cache[  ]     Q0: 1       
+   1   1 [ 29] cache[  ]     Q0:       
+   2   1 [ 28] cache[  ]     Q0:       
+   3   1 [ 27] cache[  ]     Q0:       
+   4   1 [ 26] cache[  ]     Q0:       
+   5   1 [ 25] cache[  ]     Q0:       
+   6   1 [ 24] cache[  ]     Q0:       
+   7   1 [ 23] cache[  ]     Q0:       
+   8   1 [ 22] cache[  ]     Q0:       
+   9   1 [ 21] cache[  ]     Q0:       
+--------------------------
+  10   1 [ 20] cache[ w]     Q0:       
+  11   1 [ 18] cache[ w]     Q0:       
+  12   1 [ 16] cache[ w]     Q0:       
+  13   1 [ 14] cache[ w]     Q0:       
+  14   1 [ 12] cache[ w]     Q0:       
+  15   1 [ 10] cache[ w]     Q0:       
+  16   1 [  8] cache[ w]     Q0:       
+  17   1 [  6] cache[ w]     Q0:       
+  18   1 [  4] cache[ w]     Q0:       
+  19   1 [  2] cache[ w]     Q0:       
+--------------------------
+  20   1 [  0] cache[ w]     Q0:       
 
-Finished time 23
+Finished time 21
 
 Per-CPU stats
-  CPU 0  utilization 82.61 [ warm 34.78 ]
-  CPU 1  utilization 21.74 [ warm 0.00 ]
+  CPU 0  utilization 100.00 [ warm 47.62 ]
 

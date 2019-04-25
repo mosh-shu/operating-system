@@ -1,0 +1,95 @@
+ARG seed 2019
+ARG job_num 2
+ARG max_run 40
+ARG max_wset 200
+ARG job_list 
+ARG affinity 
+ARG per_cpu_queues True
+ARG num_cpus 1
+ARG quantum 5
+ARG peek_interval 30
+ARG warmup_time 10
+ARG cache_size 100
+ARG random_order False
+ARG trace True
+ARG trace_time True
+ARG trace_cache True
+ARG trace_sched True
+ARG compute True
+
+Job name:0 run_time:30 working_set_size:150
+Job name:1 run_time:30 working_set_size:30
+
+Scheduler CPU 0 queue: ['0', '1']
+
+   0   0 [ 29] cache[  ]     Q0: 1       
+   1   0 [ 28] cache[  ]     Q0: 1       
+   2   0 [ 27] cache[  ]     Q0: 1       
+   3   0 [ 26] cache[  ]     Q0: 1       
+   4   0 [ 25] cache[  ]     Q0: 1       
+--------------------------
+   5   1 [ 29] cache[  ]     Q0: 0       
+   6   1 [ 28] cache[  ]     Q0: 0       
+   7   1 [ 27] cache[  ]     Q0: 0       
+   8   1 [ 26] cache[  ]     Q0: 0       
+   9   1 [ 25] cache[  ]     Q0: 0       
+--------------------------
+  10   0 [ 24] cache[  ]     Q0: 1       
+  11   0 [ 23] cache[  ]     Q0: 1       
+  12   0 [ 22] cache[  ]     Q0: 1       
+  13   0 [ 21] cache[  ]     Q0: 1       
+  14   0 [ 20] cache[  ]     Q0: 1       
+--------------------------
+  15   1 [ 24] cache[  ]     Q0: 0       
+  16   1 [ 23] cache[  ]     Q0: 0       
+  17   1 [ 22] cache[  ]     Q0: 0       
+  18   1 [ 21] cache[  ]     Q0: 0       
+  19   1 [ 20] cache[ w]     Q0: 0       
+--------------------------
+  20   0 [ 19] cache[ w]     Q0: 1       
+  21   0 [ 18] cache[ w]     Q0: 1       
+  22   0 [ 17] cache[ w]     Q0: 1       
+  23   0 [ 16] cache[ w]     Q0: 1       
+  24   0 [ 15] cache[ w]     Q0: 1       
+--------------------------
+  25   1 [ 18] cache[ w]     Q0: 0       
+  26   1 [ 16] cache[ w]     Q0: 0       
+  27   1 [ 14] cache[ w]     Q0: 0       
+  28   1 [ 12] cache[ w]     Q0: 0       
+  29   1 [ 10] cache[ w]     Q0: 0       
+--------------------------
+  30   0 [ 14] cache[ w]     Q0: 1       
+  31   0 [ 13] cache[ w]     Q0: 1       
+  32   0 [ 12] cache[ w]     Q0: 1       
+  33   0 [ 11] cache[ w]     Q0: 1       
+  34   0 [ 10] cache[  ]     Q0: 1       
+--------------------------
+  35   1 [  9] cache[  ]     Q0: 0       
+  36   1 [  8] cache[  ]     Q0: 0       
+  37   1 [  7] cache[  ]     Q0: 0       
+  38   1 [  6] cache[  ]     Q0: 0       
+  39   1 [  5] cache[  ]     Q0: 0       
+--------------------------
+  40   0 [  9] cache[  ]     Q0: 1       
+  41   0 [  8] cache[  ]     Q0: 1       
+  42   0 [  7] cache[  ]     Q0: 1       
+  43   0 [  6] cache[  ]     Q0: 1       
+  44   0 [  5] cache[  ]     Q0: 1       
+--------------------------
+  45   1 [  4] cache[  ]     Q0: 0       
+  46   1 [  3] cache[  ]     Q0: 0       
+  47   1 [  2] cache[  ]     Q0: 0       
+  48   1 [  1] cache[  ]     Q0: 0       
+  49   1 [  0] cache[ w]     Q0: 0       
+--------------------------
+  50   0 [  4] cache[ w]     Q0:       
+  51   0 [  3] cache[ w]     Q0:       
+  52   0 [  2] cache[ w]     Q0:       
+  53   0 [  1] cache[ w]     Q0:       
+  54   0 [  0] cache[  ]     Q0:       
+
+Finished time 55
+
+Per-CPU stats
+  CPU 0  utilization 100.00 [ warm 9.09 ]
+

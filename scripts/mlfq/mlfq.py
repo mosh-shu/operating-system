@@ -4,22 +4,6 @@ import sys
 from optparse import OptionParser
 import random
 
-# finds the highest nonempty queue
-# -1 if they are all empty
-def FindQueue():
-    q = hiQueue
-    while q > 0:
-        if len(queue[q]) > 0:
-            return q
-        q -= 1
-    if len(queue[0]) > 0:
-        return 0
-    return -1
-
-def Abort(str):
-    sys.stderr.write(str + '\n')
-    exit(1)
-
 
 #
 # PARSE ARGUMENTS
@@ -223,7 +207,7 @@ while finishedJobs < totalJobs:
     # check for priority boost
     if options.boost > 0 and currTime != 0:
         if currTime % options.boost == 0:
-            print '[ time %d ] BOOST ( every %d )' % (currTime, options.boost)
+            # print '[ time %d ] BOOST ( every %d )' % (currTime, options.boost)
             # remove all jobs from queues (except high queue) and put them in high queue
             for q in range(numQueues-1):
                 for j in queue[q]:
@@ -237,7 +221,7 @@ while finishedJobs < totalJobs:
             for j in range(numJobs):
                 # print '-> Boost %d (timeLeft %d)' % (j, job[j]['timeLeft'])
                 if job[j]['timeLeft'] > 0:
-                    # print '-> FinalBoost %d (timeLeft %d)' % (j, job[j]['timeLeft'])
+                    print '-> FinalBoost %d (ticksLeft %d)' % (j, job[j]['ticksLeft'])
                     job[j]['currPri']   = hiQueue
                     job[j]['ticksLeft'] = allotment[hiQueue]
             # print 'BOOST END: QUEUES look like:', queue

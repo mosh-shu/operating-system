@@ -1,0 +1,1 @@
+`boost-test.txt` is a result of executing `./mlfq.py -l 0,200,0 -Q 10,10 -B 50 -S -c > boost-test.txt. After JOB 0 gets boosted at time 50, the PRIORITY imediately goes to 0; is this a bug in `mlfq.py`, or am I missing something?

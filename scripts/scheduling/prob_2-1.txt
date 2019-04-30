@@ -1,0 +1,93 @@
+ARG seed 0
+ARG job_num 3
+ARG max_run 100
+ARG max_wset 200
+ARG job_list 0:500:50
+ARG affinity 
+ARG per_cpu_queues True
+ARG num_cpus 1
+ARG quantum 10
+ARG peek_interval 30
+ARG warmup_time 10
+ARG cache_size 100
+ARG random_order True
+ARG trace True
+ARG trace_time True
+ARG trace_cache True
+ARG trace_sched True
+ARG compute True
+
+Job name:0 run_time:500 working_set_size:50
+
+Scheduler CPU 0 queue: ['0']
+
+   0   0 [499] cache[ ]     Q0:       
+   1   0 [498] cache[ ]     Q0:       
+   2   0 [497] cache[ ]     Q0:       
+   3   0 [496] cache[ ]     Q0:       
+   4   0 [495] cache[ ]     Q0:       
+   5   0 [494] cache[ ]     Q0:       
+   6   0 [493] cache[ ]     Q0:       
+   7   0 [492] cache[ ]     Q0:       
+   8   0 [491] cache[ ]     Q0:       
+   9   0 [490] cache[w]     Q0:       
+-------------------------
+  10   0 [480] cache[w]     Q0:       
+  11   0 [470] cache[w]     Q0:       
+  12   0 [460] cache[w]     Q0:       
+  13   0 [450] cache[w]     Q0:       
+  14   0 [440] cache[w]     Q0:       
+  15   0 [430] cache[w]     Q0:       
+  16   0 [420] cache[w]     Q0:       
+  17   0 [410] cache[w]     Q0:       
+  18   0 [400] cache[w]     Q0:       
+  19   0 [390] cache[w]     Q0:       
+-------------------------
+  20   0 [380] cache[w]     Q0:       
+  21   0 [370] cache[w]     Q0:       
+  22   0 [360] cache[w]     Q0:       
+  23   0 [350] cache[w]     Q0:       
+  24   0 [340] cache[w]     Q0:       
+  25   0 [330] cache[w]     Q0:       
+  26   0 [320] cache[w]     Q0:       
+  27   0 [310] cache[w]     Q0:       
+  28   0 [300] cache[w]     Q0:       
+  29   0 [290] cache[w]     Q0:       
+-------------------------
+  30   0 [280] cache[w]     Q0:       
+  31   0 [270] cache[w]     Q0:       
+  32   0 [260] cache[w]     Q0:       
+  33   0 [250] cache[w]     Q0:       
+  34   0 [240] cache[w]     Q0:       
+  35   0 [230] cache[w]     Q0:       
+  36   0 [220] cache[w]     Q0:       
+  37   0 [210] cache[w]     Q0:       
+  38   0 [200] cache[w]     Q0:       
+  39   0 [190] cache[w]     Q0:       
+-------------------------
+  40   0 [180] cache[w]     Q0:       
+  41   0 [170] cache[w]     Q0:       
+  42   0 [160] cache[w]     Q0:       
+  43   0 [150] cache[w]     Q0:       
+  44   0 [140] cache[w]     Q0:       
+  45   0 [130] cache[w]     Q0:       
+  46   0 [120] cache[w]     Q0:       
+  47   0 [110] cache[w]     Q0:       
+  48   0 [100] cache[w]     Q0:       
+  49   0 [ 90] cache[w]     Q0:       
+-------------------------
+  50   0 [ 80] cache[w]     Q0:       
+  51   0 [ 70] cache[w]     Q0:       
+  52   0 [ 60] cache[w]     Q0:       
+  53   0 [ 50] cache[w]     Q0:       
+  54   0 [ 40] cache[w]     Q0:       
+  55   0 [ 30] cache[w]     Q0:       
+  56   0 [ 20] cache[w]     Q0:       
+  57   0 [ 10] cache[w]     Q0:       
+  58   0 [  0] cache[w]     Q0:       
+
+Finished time 59
+
+Per-CPU stats
+  CPU 0  utilization 100.00 [ warm 83.05 ]
+

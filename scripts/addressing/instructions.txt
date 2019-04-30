@@ -1,0 +1,22 @@
+Addressing, Memory Segments, etc.
+In this homework, you’ll confirm your understanding of the memory
+segments in a process. You’ll have to develop a C program on your own
+for it.
+You will have several files. Please put them in a .tgz or .zip file,
+no other file formats will be accepted!
+Incude a README.txt file that tells me what files are included and
+what they are, e.g. which of the four problems below they are the
+answer to.
+1. Print out a pointer to a local variable inside a function.
+2. Use recursion and print out the addresses of local variables. Does
+the stack on your system grow up or down?
+3. Print some pointers to some global variables. Have some be
+initialized at compile time, some not.
+4. Print some pointers to functions.
+5. malloc() some memory and print a pointer to it.
+6. Can you find a process address space map, and determine which
+segments local variables, global variables, functions, and malloced
+memory belong to?
+For all of the above, include both your source code and the output!
+If you have only one program that does all of it, that’s okay, please
+tell me in the README.txt you include.

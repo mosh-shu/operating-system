@@ -10,7 +10,7 @@ OPTIONS quantum length for queue  0 is  10
 OPTIONS boost 0
 OPTIONS ioTime 5
 OPTIONS stayAfterIO True
-OPTIONS iobump True
+OPTIONS iobump False
 
 
 For each job, three defining characteristics are given:

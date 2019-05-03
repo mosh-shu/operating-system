@@ -5,6 +5,7 @@ import sys
 from optparse import OptionParser
 import random
 
+
 # finds the highest nonempty queue
 # -1 if they are all empty
 def FindQueue():
@@ -21,6 +22,10 @@ def Abort(str):
     sys.stderr.write(str + '\n')
     exit(1)
 
+def GetFairness(x):
+    n = len(x)
+    f = float(sum(x)**2) / (n * sum([xs**2 for xs in x]))
+    return f
 
 #
 # PARSE ARGUMENTS
@@ -213,6 +218,9 @@ currTime = 0
 totalJobs    = len(job)
 finishedJobs = 0
 
+# initialize fairness
+fairness = {}
+
 print '\nExecution Trace:\n'
 
 while finishedJobs < totalJobs:
@@ -356,6 +364,7 @@ print ''
 print 'Final statistics:'
 responseSum   = 0
 turnaroundSum = 0
+xi_array = []
 for i in range(numJobs):
     response   = job[i]['firstRun'] - job[i]['startTime']
     turnaround = job[i]['endTime'] - job[i]['startTime']
@@ -363,9 +372,11 @@ for i in range(numJobs):
                                                                         response, turnaround)
     responseSum   += response
     turnaroundSum += turnaround
+    xi_array.append(float(turnaround)/job[i]['runTime'])
 
 print '\n  Avg %2d: startTime n/a - response %.2f - turnaround %.2f' % (i, 
                                                                         float(responseSum)/numJobs,
                                                                         float(turnaroundSum)/numJobs)
+print '\n fairness is %.3f' % (GetFairness(xi_array))
 
 print '\n'

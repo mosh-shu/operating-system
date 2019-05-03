@@ -561,5 +561,3 @@ Final statistics:
   Job  2: startTime 100 - response  15 - turnaround 250
 
   Avg  2: startTime n/a - response 8.33 - turnaround 298.33
-
-

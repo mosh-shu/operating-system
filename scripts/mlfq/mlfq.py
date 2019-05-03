@@ -22,6 +22,7 @@ def Abort(str):
     sys.stderr.write(str + '\n')
     exit(1)
 
+# Calculate Raj Jain's Fairness index
 def GetFairness(x):
     n = len(x)
     f = float(sum(x)**2) / (n * sum([xs**2 for xs in x]))
@@ -364,7 +365,7 @@ print ''
 print 'Final statistics:'
 responseSum   = 0
 turnaroundSum = 0
-xi_array = []
+xi_array = [] # keep the x_i for each jobss
 for i in range(numJobs):
     response   = job[i]['firstRun'] - job[i]['startTime']
     turnaround = job[i]['endTime'] - job[i]['startTime']
@@ -372,11 +373,13 @@ for i in range(numJobs):
                                                                         response, turnaround)
     responseSum   += response
     turnaroundSum += turnaround
+    # append x_i to the array. o_i (runTime) normalizes jobs with varying lenghts
     xi_array.append(float(turnaround)/job[i]['runTime'])
 
 print '\n  Avg %2d: startTime n/a - response %.2f - turnaround %.2f' % (i, 
                                                                         float(responseSum)/numJobs,
                                                                         float(turnaroundSum)/numJobs)
-print '\n fairness is %.3f' % (GetFairness(xi_array))
+# print fairness
+print '\n Fairness is %.3f' % (GetFairness(xi_array))
 
 print '\n'

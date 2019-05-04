@@ -25,8 +25,6 @@ def Abort(str):
 # Calculate Raj Jain's Fairness index
 def GetFairness(x):
     n = len(x)
-    if n == 1:
-        return 1
     f = float(sum(x)**2) / (n * sum([xs**2 for xs in x]))
     return f
 

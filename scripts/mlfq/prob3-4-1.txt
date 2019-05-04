@@ -555,6 +555,12 @@ Final statistics:
 
   Avg  2: startTime n/a - response 1.67 - turnaround 265.00
 
+<<<<<<< HEAD
  Fairness is 0.999
+||||||| 495bb08... added cocori's help
+ Fairness is 0.873
+=======
+ Fairness is 1.000
+>>>>>>> parent of 495bb08... added cocori's help
 
 

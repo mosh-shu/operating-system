@@ -317,6 +317,6 @@ Final statistics:
 
   Avg  1: startTime n/a - response 5.00 - turnaround 260.00
 
- Fairness is 0.994
+ Fairness is 0.983
 
 

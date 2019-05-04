@@ -25,6 +25,8 @@ def Abort(str):
 # Calculate Raj Jain's Fairness index
 def GetFairness(x):
     n = len(x)
+    if n == 1:
+        return 1
     f = float(sum(x)**2) / (n * sum([xs**2 for xs in x]))
     return f
 
@@ -374,7 +376,7 @@ for i in range(numJobs):
     responseSum   += response
     turnaroundSum += turnaround
     # append x_i to the array. o_i (runTime) normalizes jobs with varying lenghts
-    xi_array.append(float(turnaround)/job[i]['runTime'])
+    xi_array.append(turnaround - job[i]['runTime'] - response)
 
 print '\n  Avg %2d: startTime n/a - response %.2f - turnaround %.2f' % (i, 
                                                                         float(responseSum)/numJobs,

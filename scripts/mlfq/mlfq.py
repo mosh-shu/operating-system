@@ -85,9 +85,9 @@ parser.add_option('-c', help='compute answers for me', action='store_true',
 
 # o_i in jain's lecture, if you want to weight fairness
 parser.add_option('-F', '--fairList',
-                  help='fair throughput for each job, specified as ' + \
-                  'x,y,z,... where x is the fair throughput for job 0, ' + \
-                  'y is the fair throughput for job 1, and so forth', 
+                  help='fair delay for each job, specified as ' + \
+                  'x,y,z,... where x is the fair delay for job 0, ' + \
+                  'y is the fair delay for job 1, and so forth', 
                   default='', action='store', type='string', dest='fairList')               
 
 (options, args) = parser.parse_args()
@@ -183,10 +183,10 @@ else:
 
 numJobs = len(job)
 
-# list of fair throughput, o_i
+# list of fair delay, o_i
 fair = []
 if options.fairList != '':
-    # extract the specified fair throughput
+    # extract the specified fair delay
     fairWeight = options.fairList.split(',')
     numFair = len(fairWeight)
     if numFair != numJobs:
@@ -400,7 +400,7 @@ for i in range(numJobs):
                                                                         response, turnaround)
     responseSum   += response
     turnaroundSum += turnaround
-    # append x_i to the array. o_i weights the "fair throughput"
+    # append x_i to the array. o_i weights the "fair delay"
     xi = float(turnaround - job[i]['runTime'] - response) / fair[i]
     xi_array.append(xi)
 

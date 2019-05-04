@@ -376,7 +376,8 @@ for i in range(numJobs):
     responseSum   += response
     turnaroundSum += turnaround
     # append x_i to the array. o_i (runTime) normalizes jobs with varying lenghts
-    xi_array.append(turnaround - job[i]['runTime'] - response)
+    xi = float(turnaround - job[i]['runTime'] - response) / job[i]['runTime']
+    xi_array.append(xi)
 
 print '\n  Avg %2d: startTime n/a - response %.2f - turnaround %.2f' % (i, 
                                                                         float(responseSum)/numJobs,

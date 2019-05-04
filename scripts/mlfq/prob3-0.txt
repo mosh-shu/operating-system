@@ -7,6 +7,7 @@ OPTIONS allotments for queue  1 is   1
 OPTIONS quantum length for queue  1 is  10
 OPTIONS allotments for queue  0 is   1
 OPTIONS quantum length for queue  0 is  10
+OPTIONS fair weight for job  0 is   1
 OPTIONS boost 0
 OPTIONS ioTime 5
 OPTIONS stayAfterIO False
@@ -237,6 +238,6 @@ Final statistics:
 
   Avg  1: startTime n/a - response 5.00 - turnaround 195.00
 
- fairness is 0.999
+ Fairness is 1.000
 
 

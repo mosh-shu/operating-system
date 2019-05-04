@@ -25,6 +25,8 @@ def Abort(str):
 # Calculate Raj Jain's Fairness index
 def GetFairness(x):
     n = len(x)
+    if n == 1:
+        return 1
     f = float(sum(x)**2) / (n * sum([xs**2 for xs in x]))
     return f
 
@@ -80,6 +82,13 @@ parser.add_option('-l', '--jlist', default='',
                   action='store', type='string', dest='jlist')
 parser.add_option('-c', help='compute answers for me', action='store_true',
                   default=False, dest='solve')
+
+# o_i in jain's lecture, if you want to weight fairness
+parser.add_option('-F', '--fairList',
+                  help='fair throughput for each job, specified as ' + \
+                  'x,y,z,... where x is the fair throughput for job 0, ' + \
+                  'y is the fair throughput for job 1, and so forth', 
+                  default='', action='store', type='string', dest='fairList')               
 
 (options, args) = parser.parse_args()
 
@@ -174,12 +183,30 @@ else:
 
 numJobs = len(job)
 
+# list of fair throughput, o_i
+fair = []
+if options.fairList != '':
+    # extract the specified fair throughput
+    fairWeight = options.fairList.split(',')
+    numFair = len(fairWeight)
+    if numFair != numJobs:
+        print('length of fairList and number of jobs must match!')
+        exit(1)
+    for fc in range(numFair):
+        fair.append(fairWeight[fc])
+else:
+    # if not specified, weight them equally
+    for fc in range(numJobs):
+        fair.append(1)
+
 print 'Here is the list of inputs:'
 print 'OPTIONS jobs',            numJobs
 print 'OPTIONS queues',          numQueues
 for i in range(len(quantum)-1,-1,-1):
     print 'OPTIONS allotments for queue %2d is %3d' % (i, allotment[i])
     print 'OPTIONS quantum length for queue %2d is %3d' % (i, quantum[i])
+for i in range(numJobs-1):
+    print 'OPTIONS fair weight for job %2d is %3d' % (i, fair[i])
 print 'OPTIONS boost',           options.boost
 print 'OPTIONS ioTime',          options.ioTime
 print 'OPTIONS stayAfterIO',     options.stay
@@ -373,8 +400,8 @@ for i in range(numJobs):
                                                                         response, turnaround)
     responseSum   += response
     turnaroundSum += turnaround
-    # append x_i to the array. o_i (runTime) normalizes jobs with varying lenghts
-    xi = float(turnaround - job[i]['runTime'] - response) 
+    # append x_i to the array. o_i weights the "fair throughput"
+    xi = float(turnaround - job[i]['runTime'] - response) / fair[i]
     xi_array.append(xi)
 
 print '\n  Avg %2d: startTime n/a - response %.2f - turnaround %.2f' % (i, 

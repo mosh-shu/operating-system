@@ -1,0 +1,655 @@
+<html>
+
+<head>
+<title>OSTEP: Errata and Book News</title> 
+</head> 
+
+<body text=black bgcolor=white link=#00aacc vlink=#00aacc alink=black>
+
+<center><table><tr><td width=800pt>
+
+<center>
+<font color=#00aacc>
+<h1>Operating Systems: Three Easy Pieces</h1> 
+</font> 
+</center> 
+
+<h2>Errata and Book News</h2> 
+
+<p>Here is a list of problems found and fixed in the book, as well as book
+news. Thanks so much to all of you for your help! Check out the book preface
+for more specific acknowledgements.</p> 
+
+<p>
+<ul>
+<li><b>v1.01</b> 05/04/19 (Chien-Chung Shen @ Delaware): typo in <b>cpu-mechanisms</b> </li> 
+<li><b>v1.01</b> 05/04/19 (Dominic White): typo in <b>cpu-sched-lottery</b> </li> 
+<li><b>v1.01</b> 05/04/19 (Jason Waterman @ Vassar): bad cite in <b>vm-complete</b> </li> 
+<li><b>v1.01</b> 05/04/19 (Chien-Chung Shen @ Delaware): suggested reword in <b>threads-locks</b> </li> 
+<li><b>v1.01</b> 05/04/19 (Chien-Chung Shen @ Delaware): typos in <b>lab-tutorial</b> </li> 
+<li><b>v1.01</b> 04/23/19 (Chien-Chung Shen @ Delaware): typo in <b>threads-api</b> </li> 
+<li><b>v1.01</b> 04/17/19 (Mohamed Omran @ GUST): code typo in <b>threads-sema</b> </li> 
+<li><b>v1.01</b> 04/16/19 (Chien-Chung Shen @ Delaware): nit in <b>threads-intro</b> </li> 
+<li><b>v1.01</b> 04/08/19 (Ethan Wood): citation fix in <b>cpu-sched-lottery</b> </li> 
+<li><b>v1.01</b> 03/28/19 (Tobi Popoola): bug fix in <b>fsck.py</b> </li> 
+<li><b>v1.01</b> 03/02/19 (Dylan Kaplan): particularly not particular in <b>vm-tlbs</b> </li> 
+<li><b>v1.01</b> 03/02/19 (Chien-Chung Shen @ Delaware): nit in <b>file-implementation</b> </li> 
+<li><b>v1.01</b> 03/02/19 (Andrei Bozantan): clarify niceness oddity/not in <b>cpu-sched-lottery</b> </li> 
+<li><b>v1.01</b> 03/01/19 (Marcel van der Holst): bad link in <b>file-implementation, file-lfs, file-journaling, file-ssd</b> </li> 
+<li><b>v1.01</b> 02/28/19 (Andrew Moss): typo in <b>vm-complete</b> </li> 
+<li><b>v1.01</b> 02/28/19 (Andrew Moss): typo in <b>threads-locks</b> </li> 
+<li><b>v1.01</b> 02/26/19 (John McEachen @ NPS): typo in <b>cpu-sched-lottery</b> 
+equation; also re-typesetting for better readability in general.</li> 
+<li><b>v1.00</b> 10/12/18 (Louie Lu): fix to homework <b>multi.py</b> </li> 
+<li><b>v1.00</b> 08/29/18: Version 1.0 release. Adds everything you see in 0.92
+below, plus many other things, including many homeworks (including SSD
+simulator, multi-CPU scheduling simulator, NFS trace analysis, more security
+information throughout (in MLFQ scheduling, Linux VM ASLR discussion, tiny bit
+on Meltdown/Spectre, file permissions/access control lists, discussion of
+TOCTTOU attacks, etc.), more about Linux CFS scheduler, more about Linux VM,
+changed VMS chapter into complete VM chapter with Linux details (and VMS),
+better discussion of open file table vs. descriptors,
+better devices diagram, key terms added at the end of some chapters,
+more citations to important work, more citations to our own work,
+better formatting so as not to use too many pages, etc. Update to printed
+books too. Latest full electronic book available at Gumroad (and, you always
+get those updates for free).</li> 
+<li><b>v0.92</b> 08/29/18 (Yuanyuan Chen): small change to <b>file-nfs</b> </li> 
+<li><b>v0.92</b> 08/29/18 (Scott Lee @ UCLA): typo in <b>file-integrity</b> </li> 
+<li><b>v0.92</b> 08/24/18: added separation between time slice and allotment per queue level to homework in <b>cpu-sched-mlfq</b> </li> 
+<li><b>v0.92</b> 08/24/18: added notion of user and other stuff to <b>cpu-api</b> </li> 
+<li><b>v0.92</b> 08/24/18: added permission/ACL discussion to <b>file-intro</b> </li> 
+<li><b>v0.92</b> 08/24/18: added homework to <b>dist-nfs</b> </li> 
+<li><b>v0.92</b> 08/23/18: some revision to <b>file-device</b> </li> 
+<li><b>v0.92</b> 08/23/18: added homework to <b>file-ssd</b> </li> 
+<li><b>v0.92</b> 08/20/18: added homework to <b>cpu-sched-multi</b> </li> 
+<li><b>v0.92</b> 08/16/18: added note on security to <b>cpu-sched-mlfq</b> </li> 
+<li><b>v0.92</b> 08/16/18: added homework to <b>threads-sema</b> </li> 
+<li><b>v0.92</b> 08/14/18 (Zeyuan Hu): typos in <b>threads-events, file-implementation, file-lfs</b> </li> 
+<li><b>v0.92</b> 08/14/18 (Neil Perry): typos in <b>vm-smalltables, threads-locks, threads-bugs, dialogue-concurrency, file-lfs</b> </li> 
+<li><b>v0.92</b> 08/14/18: added Vnode/VFS side bar in <b>dist-nfs</b> </li> 
+<li><b>v0.92</b> 08/14/18 (Chien-Chung Shen @ Delaware): detailed citation in <b>vm-api</b> </li> 
+<li><b>v0.92</b> 08/14/18: added more details about FTL size reduction and summary of terms to <b>file-ssd</b> </li> 
+<li><b>v0.92</b> 08/14/18 (Youjip Won @ Hanyang): added much better discussion of file descriptors, open file table, and fork/dup, to <b>file-intro</b> </li> 
+<li><b>v0.92</b> 08/08/18 (Kemal Bicakci): typo in <b>file-implementation</b> </li> 
+<li><b>v0.92</b> 08/08/18 (Emil Hessman): typos in <b>threads-bugs, file-ssd, vm-tlbs, vm-beyondphys-policy, dist-afs</b> </li> 
+<li><b>v0.92</b> 08/08/18: slight update to add citations to <b>threads-intro</b> </li> 
+<li><b>v0.92</b> 07/05/18: added homework to <b>file-journaling</b> </li> 
+<li><b>v0.92</b> 06/11/18 (Stephen Bye): typos in <b>file-disks, threads-events</b> </li> 
+<li><b>v0.92</b> 06/04/18 (Hilmar Gustafsson @ Aalborg): typo in <b>vm-mechanism</b> </li> 
+<li><b>v0.92</b> 06/04/18 (Jhih-Cheng Luo): typo in <b>threads-sema</b> </li> 
+<li><b>v0.92</b> 06/04/18 (Zeyuan Hu @ Texas): typo and suggestion in <b>file-ssd</b> </li> 
+<li><b>v0.92</b> 05/16/18 (Stephen Bye): rename variable in <b>cpu-api</b> </li> 
+<li><b>v0.92</b> 05/10/18 (James Earley): typo in <b>file-ssd</b> </li> 
+<li><b>v0.92</b> 04/25/18 (Tianxia Bai): error in switch-merge example in <b>file-ssd</b> </li> 
+<li><b>v0.92</b> 04/19/18 (C.J. Stanbridge @ Memorial U. in Newfoundland): 'PDE Entry' not 'PDE' in <b>vm-smalltables</b> </li> 
+<li><b>v0.92</b> 04/12/18 (Nicholas Mandal): predetermined not pre-determined in <b>file-device</b> </li> 
+<li><b>v0.92</b> 03/06/18 (Darby Asher Noam Haller): bitwise not logical OR in <b>vm-paging</b> </li> 
+<li><b>v0.92</b> 02/26/18 (Marcel van der Holst): typo in <b>vm-beyondphys</b> </li> 
+<li><b>v0.92</b> 02/12/18 (Neil Perry): typo in <b>vm-segmentation</b> </li> 
+<li><b>v0.92</b> 02/10/18 (Robert Ordonez @ Southern Adventist): start graphs at actual 0 <b>cpu-sched-mlfq</b> </li> 
+<li><b>v0.92</b> 01/24/18 (Mohamed Omran @ GUST): introduce acronym more carefully in <b>cpu-mechanisms</b> </li> 
+<li><b>v0.92</b> 12/17/17 (Yuanyuan Chen): typo in <b>dist-afs</b> </li> 
+<li><b>v0.92</b> 11/28/17 (Joshua Carpenter @ NCSU): typo in <b>file-journaling</b> </li> 
+<li><b>v0.92</b> 11/04/17 (Sam Kelly): many small fixes in <b>threads-api, vm-api, threads-locks, threads-locks-usage, file-ssd, vm-beyondphys-policy, vm-intro, vm-smalltables</b> 
+<li><b>v0.92</b> 11/04/17 (Eric Johansson): compiler flag in intro code example</li> 
+<li><b>v0.92</b> 11/03/17 (Peter Peterson @ Minnesota): suggestions for <b>file-lfs</b> </li> 
+<li><b>v0.92</b> 11/03/17 (Dakota Crane @ Washington-Tacoma): suggested GNU shout out in <b>intro</b> </li> 
+<li><b>v0.92</b> 11/03/17 (Alistair Martin): fixes to homework in <b>threads-locks</b> </li> 
+<li><b>v0.92</b> 11/02/17 (Antonella Bernobich @ UoPeople): host of typos - gasp! - in <b>threads-api, threads-sema, thread-bugs, thread-events, file-disks, file-intro, file-journaling, file-integrity, file-dialogue, dist-intro, dist-nfs, dist-afs</b> </li> 
+<li><b>v0.92</b> 11/02/17 (Rohan Puri): typo in <b>threads-sema</b> </li> 
+<li><b>v0.92</b> 10/31/17 (Yifan Hao): better AMAT definition in <b>vm-beyondphys-policy</b> </li> 
+<li><b>v0.92</b> 10/31/17: inserted <b>file-ssd</b> chapter into main flow, renumbered chapters as appropriate</li> 
+<li><b>v0.92</b> 10/31/17 (Waciuma Wanjohi): answer to footnote in <b>vm-mechanism</b> </li> 
+<li><b>v0.92</b> 10/31/17 (Manu Awasthi): citation fix for ZFS (throughout), small fix in <b>file-journaling</b> </li> 
+<li><b>v0.92</b> 10/18/17 (Dan Tsafrir @ Technion): clarified definition in <b>cpu-sched</b> </li> 
+<li><b>v0.92</b> 10/01/17 (Robert Ordonez @ Southern Adventist): mistaken in <b>vm-intro</b> homework</li> 
+<li><b>v0.92</b> 09/26/17 (Robert Ordonez @ Southern Adventist): oversight in <b>malloc</b> homework</li> 
+<li><b>v0.92</b> 09/21/17 (Giovanni Lagorio @ DIBRIS): suggestions for lecturer notes in <b>intro</b> </li> 
+<li><b>v0.92</b> 09/14/17 (Ahmad Jarara): typo in homework in <b>file-ffs</b> </li> 
+<li><b>v0.92</b> 09/07/17 (Eric Freudenthal @ UTEP): rephrase in <b>cpu-intro</b> </li> 
+<li><b>v0.92</b> 09/07/17 (Jason Waterman @ Vassar): typo in cites of <b>cpu-sched-mlfq</b> </li> 
+<li><b>v0.92</b> 07/31/17 (Stefan Dekanski): typo in <b>file-intro</b> </li> 
+<li><b>v0.92</b> 07/31/17 (Spencer Harston @ Weber State): url problems in <b>file-disks</b> </li> 
+<li><b>v0.92</b> 07/18/17 (Michael Wu): typos in <b>intro</b> </li> 
+<li><b>v0.92</b> 06/22/17: added homeworks to <b>file-integrity</b> </li> 
+<li><b>v0.92</b> 06/16/17: added homework to <b>file-lfs</b> </li> 
+<li><b>v0.92</b> 06/07/17: added homework to <b>vm-intro</b> </li> 
+<li><b>v0.92</b> 06/07/17 (Looserof): code fix in <b>cpu-api</b> </li> 
+<li><b>v0.92</b> 06/06/17 (Chien-Chung Shen @ Delaware): improvements to <b>threads-locks</b> </li> 
+<li><b>v0.92</b> 06/06/17 (Peter Peterson @ Minnesota): some fixes to <b>dist-afs</b> </li> 
+<li><b>v0.92</b> 06/06/17 (Sam Noh): Some rewording in <b>threads-cv</b> for clarity</li> 
+<li><b>v0.92</b> 06/05/17 (Natasha Stopa): suggested fix to wording around
+spinlock fairness in <b>threads-locks</b> </li> 
+<li><b>v0.92</b> 06/05/17 (Marco Guazzone @ University of Piemonte Orientale): bug in code in <b>file-intro</b> </li> 
+<li><b>v0.92</b> 06/05/17 (Brandon Harshe): replace Mac OS X with macOS or more
+generic term (many chapters)</li> 
+<li><b>v0.92</b> 06/05/17 (Ben Kushigian): code bug in <b>threads-api</b> </li> 
+<li><b>v0.92</b> 05/22/17 (Yubin Ruan): rewording in <b>file-journaling</b> 
+<li><b>v0.92</b> 05/20/17 (Yubin Ruan): better citations in <b>file-lfs</b> </li> 
+<li><b>v0.92</b> 05/15/17 (Danilo Bruschi @ Universita Degli Studi Di Milano): Correction to <b>file-implementation</b> </li> 
+<li><b>v0.92</b> 05/13/17 (Michael Machtel @ Hochschule Konstanz): Typo in <b>threads-cv</b> homework</li> 
+<li><b>v0.92</b> 04/30/17 (Tyler Couto): Typo in <b>vm-tlbs</b> </li> 
+<li><b>v0.92</b> 04/07/17 (Nadeem Shaikh): Typo in <b>thread-intro</b> homework README</li> 
+<li><b>v0.92</b> 12/07/16: CMU clarification</li> 
+<li><b>v0.92</b> 12/01/16 (Tong He): typo in <b>threads-api</b> </li> 
+<li><b>v0.92</b> 11/16/16 (Glenn Bruns @ CSU Monterey Bay): rewording in in <b>file-device</b> </li> 
+<li><b>v0.92</b> 10/05/16 (Scott Catlin): text suggestion in <b>cpu-sched-mlfq</b> </li> 
+<li><b>v0.92</b> 10/05/16 (Natasha Stopa and Dennis Zhou): found/fixed bug in <b>mlfq.py</b> homework</li> 
+<li><b>v0.92</b> 10/05/16 (P. Kivolowitz and R. Ordonez): small bugs in <b>vm-mechanism</b> </li> 
+<li><b>v0.92</b> 09/21/16 (Andrew Mahler): typo in <b>vm-paging</b> </li> 
+<li><b>v0.92</b> 09/21/16 (Alex Curtis): typo in code in <b>dist-intro</b> </li> 
+<li><b>v0.92</b> 09/13/16: Added missing cite in <b>dist-intro</b> </li> 
+<li><b>v0.92</b> 08/27/16 (Pieter Kockx): Typo in <b>intro</b> </li> 
+<li><b>v0.92</b> 08/19/16 (Aaron Gember @ Colgate): Typos in <b>file-intro, cpu-api, cpu-mechanisms</b> </li> 
+<li><b>v0.92</b> 08/04/16: Added homework to chapter <b>file-ffs</b> , typo in <b>vm-smalltables</b> </li> 
+<li><b>v0.91</b> 07/20/16: print and electronic editions updated to latest; v0.91 finalized</li> 
+<li><b>v0.91</b> 07/12/16 (Thanu Pillai): small fix in <b>file-journaling</b> </li> 
+<li><b>v0.91</b> 07/12/16 (Peter Peterson @ Minnesota): typo in <b>threads-dialogue</b> </li> 
+<li><b>v0.91</b> 07/06/16: Added homework to chapter <b>vm-beyondphys</b> </li> 
+<li><b>v0.91</b> 07/05/16: Added homework to chapter <b>threads-api</b> </li> 
+<li><b>v0.91</b> 07/05/16: Added homework to chapter <b>threads-bugs</b> ; added bit on priority inversion to <b>threads-locks</b> </li> 
+<li><b>v0.91</b> 06/20/16: Added details on priority inversion to <b>threads-locks</b> </li> 
+<li><b>v0.91</b> 06/20/16: Added homework to chapter <b>threads-cv</b> </li> 
+<li><b>v0.91</b> 06/20/16 (Jia-Shen Boon): typos in <b>vm-mechanism,
+vm-beyondphys-policy, dialogue-distribution, dist-intro, file-implementation</b> </li> 
+<li><b>v0.91</b> 06/09/16 (Chien-Chung Shen @ Delaware): improvements to <b>cpu-mechanisms</b> </li> 
+<li><b>v0.91</b> 06/09/16 Antonella Bernobich @ UoPeople): typos in <b>vm-api, vm-freespace</b> </li> 
+<li><b>v0.91</b> 06/09/16 (Manu Awasthi @ Samsung): fixed citation in <b>cpu-intro</b> </li> 
+<li><b>v0.91</b> 06/09/16 (Jose Cruz @ U. Portugal): added third parameter in <b>file-intro</b> </li> 
+<li><b>v0.91</b> 06/09/16 (Laura Xu): bug in simulator in <b>threads-locks</b> </li> 
+<li><b>v0.91</b> 06/09/16 (Peter Peterson @ Minnesota): typo in <b>
+threads-locks-usage, vm-tlbs</b> </li> 
+<li><b>v0.91</b> 06/09/16 (John Komenda): typo in <b>file-ssd</b> </li> 
+<li><b>v0.91</b> 06/09/16 (Alex Curtis): typo in <b>file-lfs</b> </li> 
+<li><b>v0.91</b> 06/09/16 (Leonardo Medici @ U. Milan): typo in <b>file-device</b> </li> 
+<li><b>v0.91</b> 06/09/16 (Sam Kelly): typo in <b>vm-api</b> </li> 
+<li><b>v0.91</b> 05/31/16: Added a discussion on why threads are useful to <b>threads-intro</b> </li> 
+<li><b>v0.91</b> 05/11/16: Updated pet status in <b>file-intro</b> </li> 
+<li><b>v0.91</b> 05/02/16 (John Komenda): typos in <b>file-integrity</b> and <b>dist-intro</b> </li> 
+<li><b>v0.91</b> 05/02/16 (Cheng Su): typo in pic in <b>file-ssd</b> </li> 
+<li><b>v0.91</b> 04/28/16 (Chien-Chung Shen @ Delaware): typo in <b>vm-freespace</b> </li> 
+<li><b>v0.91</b> 04/27/16 (Aashrith H Govindraj @ USF): typo in <b>dist-intro</b> </li> 
+<li><b>v0.91</b> 02/29/16 (Antonella Bernobich @ UoPeople): typos in <b>vm-api</b> </li> 
+<li><b>v0.91</b> 02/29/16 (Constantinos Georgiades): typos in deprecated <b>threads-monitors</b> </li> 
+<li><b>v0.91</b> 02/29/16 (Fang Zheng @ IBM): typo in <b>vm-beyondphys-policy</b> </li> 
+<li><b>v0.91</b> 02/12/16 (Lanyue Lu): typo in ticket lock code in <b>threads-locks</b> </li> 
+<li><b>v0.91</b> 02/08/16 (Constantinos Georgiades): typo in <b>file-implementation</b> </li> 
+<li><b>v0.91</b> 02/08/16 (Roger Wattenhofer @ ETH): fixes in <b>vm-segmentation,
+vm-paging, file-intro, file-ssd</b> </li> 
+<li><b>v0.91</b> 02/01/16 (Constantinos Georgiades): typo in <b>threads-bugs</b> </li> 
+<li><b>v0.91</b> 01/28/16 (Simon Pratt @ Waterloo): figure reference in <b>
+vm-tlbs</b> homework</li> 
+<li><b>v0.91</b> 01/27/16 (ZiHan Zheng @ USTC): correction to pipe example code
+in <b>cpu-api</b> </li> 
+<li><b>v0.91</b> 01/26/16 (Peter Peterson @ Minnesota): typo in <b>lab-tutorial</b> </li> 
+<li><b>v0.91</b> 01/25/16 (Peter Peterson @ Minnesota): rewording in <b>cpu-sched</b> </li> 
+<li><b>v0.91</b> 01/25/16 (Mattia Monga @ U. Milan): clarification in homework
+README of <b>cpu-intro</b> </li> 
+<li><b>v0.91</b> 01/24/16 (Fangjun Kuang @ U. Stuttgart): typo in <b>threads-locks-usage</b> </li> 
+<li><b>v0.91</b> 01/20/16 (Michael Walfish @ NYU): fixes in <b>file-lfs, file-implementation</b> </li> 
+<li><b>v0.91</b> 01/19/16 (Peter Peterson @ Minnesota): typos in <b>cpu-intro</b> homework</li> 
+<li><b>v0.91</b> 01/15/16 (Sankaralingam Panneerselvam): typos in <b>cpu-api,
+threads-locks, file-ffs, file-lfs</b> . Also inspired new material in <b>file-ffs</b> </li> 
+<li><b>v0.91</b> 01/12/16 (Glen Granzow): typos in <b>vm-vax,
+threads-locks-usage, threads-cv, threads-bugs, threads-events, file-disks,
+file-raid, file-intro, file-implementation, file-journaling, file-lfs,
+file-integrity, dist-intro, dist-nfs</b> . Wow!</li> 
+<li><b>v0.91</b> 01/12/16 (Demic Delic): citation url in <b>file-integrity</b> </li> 
+<li><b>v0.91</b> 01/12/16 (Christian Stober): typo in <b>vm-api</b> </li> 
+<li><b>v0.91</b> 01/05/16 (Jason MacLafferty @ Southern Adventist): typo in
+README for <b>threads-intro, threads-locks</b> </li> 
+<li><b>v0.91</b> 01/04/16 (Patel Pratyush Ashesh @ BITS-Pilani): typos in <b>
+file-lfs, file-integrity, dist-intro</b> </li> 
+<li><b>v0.91</b> 12/27/15 (Patel Pratyush Ashesh @ BITS-Pilani): bug in <b>
+process-run.py</b> , typo in <b>file-intro</b> , typo in <b>dialogue-monitors</b> </li> 
+<li><b>v0.91</b> 12/20/15 (Thomas Scrace): typo in <b>cpu-mechanisms</b> </li> 
+<li><b>v0.91</b> 12/14/15 (Pavle Kostovic): typo in <b>dist-nfs</b> </li> 
+<li><b>v0.91</b> 12/09/15 Small update to <b>cpu-sched</b> </li> 
+<li><b>v0.91</b> 12/09/15 (Jackson Haenchen @ Texas): typo in <b>threads-bugs</b> </li> 
+<li><b>v0.91</b> 11/24/15 (Vikas Goel, Abhinav Mehra): bug in <b>raid.py</b> </li> 
+<li><b>v0.91</b> 11/24/15 (Vikas Goel, Katherine Dudenas, Abhinav Mehra): correctly names SCAN vs. C-SCAN(!) in <b>file-disks</b> </li> 
+<li><b>v0.91</b> 11/09/15 (Glenn Bruns @ CSU Monterey Bay): rewording in in <b>file-implementation</b> </li> 
+<li><b>v0.91</b> 10/23/15 (Glenn Bruns @ CSU Monterey Bay): rewording in in <b>threads-sema</b> </li> 
+<li><b>v0.91</b> 10/23/15 (Alex Zhao @ U. Colorado at Colorado Springs): rewording in in <b>threads-locks</b> </li> 
+<li><b>v0.91</b> 10/23/15 (Robert Ordonez @ Southern Adventist): typo in <b>threads-locks</b> </li> 
+<li><b>v0.91</b> 10/18/15 (Arek Bulski): typo in <b>file-ssd</b> </li> 
+<li><b>v0.91</b> 10/18/15 (Stanley Chan @ RIT): typo in update to this file</li> 
+<li><b>v0.91</b> 10/17/15 (Jiawen Bao): bug in ticket lock code in <b>threads-locks</b> </li> 
+<li><b>v0.91</b> 10/17/15 (Arek Bulski): typo in <b>file-integrity</b> </li> 
+<li><b>v0.91</b> 10/16/15 (Ilya Oblomkov): bug in <b>process-run.py</b> </li> 
+<li><b>v0.91</b> 10/10/15 (Robert Ordonez @ Southern Adventist): rewording in <b>vm-beyondphys-policy</b> </li> 
+<li><b>v0.91</b> 10/10/15 (Katie Coyle @ Georgia Tech): Typo in <b>cpu-sched-multi</b> </li> 
+<li><b>v0.91</b> 10/08/15 (Jagannathan T. Eachambadi): bug in <b>lottery.py</b> </li> 
+<li><b>v0.91</b> 10/08/15 (Song Jiang @ Wayne State): typos in <b>file-ffs</b> , <b>file-lfs</b> </li> 
+<li><b>v0.91</b> 09/30/15: new <a href=file-ssd.pdf>chapter on flash-based SSDs</a> now available in beta</li> 
+<li><b>v0.91</b> 09/23/15 (Manav Batra @ IIIT-Delhi): typo in <b>vm-paging</b> </li> 
+<li><b>v0.91</b> 09/22/15 (Glen Bruns @ CSU Monterey Bay): typo in <b>vm-segmentation</b> </li> 
+<li><b>v0.91</b> 09/22/15 (Katie Coyle @ Georgia Tech): Typo in <b>threads-intro</b> </li> 
+<li><b>v0.91</b> 09/09/15 (Katie Coyle @ Georgia Tech): Typo in <b>dialogue-virtualization</b> </li> 
+<li><b>v0.91</b> 09/03/15 (Yudong Sun): Typo in <b>file-lfs</b> </li> 
+<li><b>v0.91</b> 09/01/15 (Mart Oskamp): Fixed Dutch interpretation of P/V in (no
+surprise) chapter on <b>threads-sema</b> </li> 
+<li><b>v0.91</b> 08/31/15 (Robert Ordonez @ Southern Adventist): Number don't itemize in <b>cpu-api</b> and
+everywhere else
+<li><b>v0.91</b> 08/19/15 (Satish Chebrolu): Typos in <b>threads-api</b> </li> 
+<li><b>Homework</b> 04/29/15 (Dorian Arnold): Bug in <b>raid.py</b> with timing mode</li> 
+<li><b>v0.91</b> 04/15/15: Small update to <b>vm-freespace</b> </li> 
+<li><b>v0.91</b> 04/13/15 (Glen Granzow @ College of Idaho): typos in <b>threads-locks</b> </li> 
+<li><b>v0.91</b> 04/05/15 (Sandeep Ummadi): typo in <b>threads-locks-usage</b> </li> 
+<li><b>v0.90</b> 03/31/15: <b>v0.90 RELEASED:</b> Updates to many chapters, resulting in new version 0.90</li> 
+<li>03/25/15 (Teri Zhao): bug in homework <b>vsfs.py</b> when out of inodes</li> 
+<li>03/17/15 (AmirBehzad Eslami): typos and suggestions in <b>mystery-chapter</b> </li> 
+<li>03/12/15 (Jakob Olandt): typo in <b>threads-bugs</b> </li> 
+<li>03/09/15 (Glen Granzow @ College of Idaho): typos in <b>
+vm-beyondphys-policy</b> and <b>vm-beyondphys</b> </li> 
+<li>03/09/15 (Perry Kivolowitz): bug in <b>file-device</b> </li> 
+<li>03/04/15 (Dheeraj Shetty @ NC State): awkward phrasing in <b>vm-smalltables</b> </li> 
+<li>03/04/15 (Jingxin Li): bug in table in <b>threads-intro</b> </li> 
+<li>03/03/15 (Angela Demke Brown @ Toronto): bug in <b>vm-paging</b> homework script</li> 
+<li>03/02/15 (Glen Granzow @ College of Idaho): typo in <b>vm-freespace</b> homeowork</li> 
+<li>02/25/15 (Glen Granzow @ College of Idaho): typos and fixes in <b>
+vm-paging</b> and <b>vm-tlbs</b> </li> 
+<li>02/25/15 (Perry Kivolowitz): a few small things in <b>threads-locks</b> </li> 
+<li>02/25/15 (Perry Kivolowitz): variable naming in <b>threads-api</b> </li> 
+<li>02/23/15 (Perry Kivolowitz): wording change and extra commentary on
+interrupt masking in <b>threads-locks</b> </li> 
+<li>02/20/15 (Michael Walfish @ NYU): added discussion on partial orderings in
+<b>threads-bugs</b> </li> 
+<li>02/19/15 (Michael Walfish @ NYU): typographical fix and bug in <b>threads-bugs</b> </li> 
+<li>02/17/15 (Glen Granzow @ College of Idaho): typo in <b>cpu-sched</b> 
+homework, and bug in priority boost graph in <b>cpu-sched-mlfq</b> </li> 
+<li>02/17/15 (Michael Walfish @ NYU): fixes in <b>threads-cv</b> and <b>
+threads-locks-usage</b> as well as the suggestion to renumber tables
+and figures in a consistent way (a change that will happen slowly
+to all chapters with tables).</li> 
+<li>02/16/15 (Perry Kivolowitz): suggested clarification in <b>vm-beyondphys-policy</b> </li> 
+<li>02/13/15 (Glen Granzow @ College of Idaho): typo in <b>cpu-mechanisms</b> </li> 
+<li>02/09/15 (Perry Kivolowitz): some clarity suggested and hopefully provided
+in <b>vm-paging</b> </li> 
+<li>02/06/15 (Joe Jean @ NYU): clarifications around homework in <b>cpu-intro</b> </li> 
+<li>01/05/14: Added new traces in <b>cpu-intro</b> </li> 
+<li>01/04/14: Added new homework for <b>cpu-intro</b> </li> 
+<li>01/02/15 (Perry Kivolowitz): strong philosophical disagreement in <b>
+vm-api</b> which we eventually agreed with</li> 
+<li>01/31/15 (Michael Walfish @ NYU): typo in <b>cpu-api</b> </li> 
+<li>01/30/15 (David Hartman): typo in <b>cpu-intro</b> </li> 
+<li>01/28/15 (Dheeraj Shetty @ NC State): typo in <b>vm-paging</b> </li> 
+<li>01/26/15 (Emad Sadeghi): typo in <b>intro</b> </li> 
+<li>01/21/15 (Ali Razeen @ Duke): typo in <b>vm-beyondphys-policy</b> </li> 
+<li>01/11/15 (Huseyin Sular): typo in <b>intro</b> </li> 
+<li>01/11/15 (Brian Gorman): clarification in <b>threads-api</b> </li> 
+<li>01/03/15 (Authors): typos in <b>file-integrity, file-raid,
+file-journaling, vm-paging, vm-tlbs</b> </li> 
+<li>01/03/15 (Hao Chen): typo in <b>file-raid</b> </li> 
+<li>12/30/14 (Adriana Iamnitchi and class @ USF): typos and other fixes in <b>
+cpu-mechanisms, vm-freespace, threads-sema, file-implementation, file-ffs</b> </li> 
+<li>12/30/14 (Hao Chen): typo in <b>file-raid</b> </li> 
+<li>12/29/14 (Erik Turk): typo in <b>vm-vax</b> </li> 
+<li>12/17/14 (Riccardo Mutschlechner): typos in <b>file-lfs</b> </li> 
+<li>12/17/14 (William Royle @ Grinnell): clarified number of I/Os in simple
+write in <b>file-implementation</b> </li> 
+<li>12/14/14 (Yudong Sun): missing cite in <b>dist-intro</b> </li> 
+<li>12/10/14 (Hao Chen): typo in <b>vm-paging</b> figure 18.7</li> 
+<li>12/08/14 (Rohan Das @ Toronto): typos in <b>vm-mechanism, vm-segmentation,
+vm-paging, vm-tlbs, threads-intro, threads-sema, file-intro</b> </li> 
+<li>12/02/14 (John Brady @ Grinnell): typo in <b>file-lfs</b> </li> 
+<li>11/24/14 (Itai Hass @ Toronto): typo in <b>file-implementation</b> </li> 
+<li>11/24/14 (Jerod Weinman @ Grinnell): typo in <b>file-implementation</b> </li> 
+<li>11/17/14 (Nick Weinandt): typo in <b>file-journaling</b> </li> 
+<li>11/11/14 (Yudong Sun): typo in <b>threads-sema</b> </li> 
+<li>11/06/14 (Itai Hass @ Toronto): typo in <b>vm-mechanism</b> </li> 
+<li>10/29/14 (Andrew Valencik @ Saint Mary's): typos in <b>threads-intro</b> homework</li> 
+<li>10/27/14 (Eduardo Stelmaszczyk): bug in <b>threads-bugs</b> </li> 
+<li>10/16/14 (Rohan Das @ Toronto): typo in <b>cpu-sched</b> </li> 
+<li>10/13/14 (Jerod Weinman @ Grinnell): clearer prose in <b>threads-bugs</b> </li> 
+<li>10/13/14 (Joel Kuntz @ Saint Mary's): typo in <b>vm-paging</b> </li> 
+<li>09/15/14 (Robert Ordonez @ Southern Adventist): typo in <b>vm-vax</b> </li> 
+<li>10/04/14 (Jerod Weinman @ Grinnell): better fig placement in <b>threads-locks</b> </li> 
+<li>09/23/14 (Aditya Venkataraman): typo in <b>threads-api</b> </li> 
+<li>09/17/14 (Jiao Dong @ Rutgers): correct attribution of Confucius quote.</li> 
+<li>09/15/14 (Robert Ordonez @ Southern Adventist): typo in <b>vm-smalltables</b> </li> 
+<li>09/15/14 (Robert Ordonez and class @ Southern Adventist): suggestions for
+improvement for <b>cpu-sched</b> </li> 
+<li>09/12/14 (Liang Yin): typo in <b>vm-segmentation</b> </li> 
+<li>09/08/14 (Caleb Sumner @ Southern Adventist U.): typo in <b>cpu-api</b> homework</li> 
+<li><b>09/04/14:</b> Added new homework for <b>threads-locks</b> </li> 
+<li>09/03/14 (Rohan Pasalkar @ Minnesota): typos in <b>file-lfs</b> , <b>
+file-integrity</b> , <b>dist-nfs</b> </li> 
+<li>08/26/14 (Riccardo Mutschlechner): typos in <b>file-implementation</b> </li> 
+<li>08/05/14 (Riccardo Mutschlechner): typos in <b>file-intro, file-devices,
+file-disks, file-raid</b> </li> 
+<li>08/01/14 (Riccardo Mutschlechner): typo in <b>threads-cv</b> </li> 
+<li>07/28/14 (Christoph Jaeger @ HTWK Leipzig): bug in diagram in <b>vm-mechanism</b> </li> 
+<li><b>07/28/14:</b> Added new homework for <b>cpu-api</b> </li> 
+<li><b>07/26/14:</b> Added new homework for <b>vm-freespace</b> </li> 
+<li>07/02/14 (Jan Reineke @ Saarland): graph bug in <b>cpu-sched-mlfq</b> </li> 
+<li>07/02/14 (Kartik Singhal): typo in <b>cpu-intro</b> citations</li> 
+<li>06/30/14 (Hugo Diaz): typo in intro code snippet</li> 
+<li>06/10/14 (Adam Drescher @ WUSTL): many suggestions and fixed in
+<b>vm-paging, vm-segmentation, vm-tlbs, cpu-mechanisms, cpu-intro,
+cpu-sched-lottery, file-ffs, vm-smalltables, vm-intro, vm-freespace,
+vm-mechanism, cpu-sched-multi, cpu-sched-mlfq</b> </li> 
+<li>06/08/14 (Akiel Khan): typo in <b>threads-intro</b> </li> 
+<li>05/29/14 (Riccardo Mutschlechner): typo in <b>vm-paging</b> </li> 
+<li><b>v0.80</b> 05/26/14: <b>v0.80 RELEASED:</b> includes many small fixes and
+lower price hard and soft covers</li> 
+<li>05/22/14 (Neeraj Badlani @ NC State): table typos in <b>threads-cv</b> </li> 
+<li>05/22/14 (Mohammed Alali @ Delaware): typo in <b>vm-freespace</b> </li> 
+<li>05/19/14 (Adam Drescher @ WUSTL): typo in <b>cpu-sched</b> </li> 
+<li>05/18/14 (Mohammed Alali @ Delaware): typo in <b>vm-intro</b> </li> 
+<li>05/18/14 (Adam Drescher @ WUSTL): typo in <b>cpu-sched</b> </li> 
+<li>05/15/14 (Chien-Chung Shen @ Delaware): typo in <b>file-implementation</b> </li> 
+<li>05/13/14 (Chien-Chung Shen @ Delaware): typo in <b>file-intro</b> </li> 
+<li>05/03/14 (Samer Al-Kiswany): corrections in <b>file-intro</b> , <b>
+file-implementation</b> , <b>file-journaling</b> , <b>file-lfs</b> , <b>file-integrity</b> </li> 
+<li>05/02/14 (Dorian Arnold @ New Mexico): bug in disk.py homework tool</li> 
+<li>05/01/14 (Chien-Chung Shen @ Delaware): consistency problem in <b>vm-tlbs</b> </li> 
+<li>04/29/14 (Satish Chebrolu @ NetApp): typo in <b>cpu-mechanism</b> </li> 
+<li>04/28/14 (Chien-Chung Shen @ Delaware): consistency problem in <b>vm-freespace</b> </li> 
+<li>04/25/14 (Chien-Chung Shen @ Delaware): typo in <b>vm-paging</b> </li> 
+<li>04/16/14 (Leslie Schultz): typo in <b>file-devices</b> </li> 
+<li>04/13/14 (Patricio Jara): bug in Zemaphore code in <b>threads-sema</b> </li> 
+<li>04/07/14 (Mohammed Alali @ Delaware): typo in <b>threads-locks</b> </li> 
+<li>03/31/14 (Chien-Chung Shen @ Delaware): bad cite in <b>vm-api</b> </li> 
+<li>03/22/14 (Chien-Chung Shen @ Delaware): two sema value mistakes in <b>threads-sema</b> </li> 
+<li>03/14/14 (Shreevatsa R.): typos in <b>intro</b> and <b>vm-smalltables</b> </li> 
+<li><b>03/14/14:</b> Added new homework for <b>threads-intro</b> ; download it and
+play around to learn more about race conditions and related fun!</li> 
+<li><b>03/04/14:</b> Updates to everything in the Appendix - redid table to have
+more verbose chapter titles - some other small fixes</li> 
+<li>03/12/14 (Jonathan Perry @ MIT): figure incorrect in <b>file-disk</b> </li> 
+<li><b>03/04/14:</b> New homework in <b>dist-afs</b> to simulate AFS cache consistency</li> 
+<li>02/28/14 (Brian Kroth): typo in <b>vm-beyondphys-policy</b> </li> 
+<li>02/23/14 (Ming Chen @ Stonybrook): missing cite in <b>file-journaling</b> </li> 
+<li><b>v0.70</b> 02/16/14: <b>v0.70 RELEASED:</b> Major updates throughout to
+Version 0.7. This can be considered a final version of the text and figures;
+only homeworks and bug fixes for various chapters will be added to get to
+version 1.0. Changes include: re-format of entire book to fit more text onto
+each page (saves a few bucks in the printed version, and looks a little
+better); added proper copyright notice and link to www.ostep.org on page
+footers; a few more people to thank in the acks; added list of tables; added
+line numbers to most code snippets added figure to <b>cpu-intro</b> , plus a
+little more description; added another example to <b>cpu-api</b> , plus aside;
+small rewrites to <b>cpu-sched</b> ; new pics to <b>cpu-sched-multi</b> ; new pic in
+<b>vm-freespace</b> ; decent rewrite of <b>vm-tlbs</b> including better example,
+aside, and pics; added some text to <b>vm-beyondphys</b> to clarify terms;
+additional policy discussion in <b>vm-beyondphys-policy</b> ; some detailed traces
+in <b>threads-cv</b> plus clarifying text; some detailed traces in <b>
+threads-sema</b> , plus clarification of Semaphore definition as per original
+paper; discussion of signals in <b>threads-events</b> ; better pics in <b>
+file-devices</b> ; nice piece on dimensional analysis in <b>file-disks</b> ; new graph
+of amortization in <b>file-ffs</b> ; many new figures in <b>file-journaling</b> , as
+well as new text and timelines of journal protocols; new pics in <b>
+file-integrity</b> ; new traces in <b>dist-afs</b> , as well as timelines, an aside,
+and an analysis of NFS/AFS; bug fixes throughout; new citations throughout</li> 
+<li>02/06/14 (Jun He): typos in <b>file-intro</b> and <b>vm-mechanism</b> </li> 
+<li>01/20/14 (Bjorn Lindberg): clarified random number generation in <b>cpu-sched-lottery</b> </li> 
+<li>01/19/14 (Thomas Griebel): added cover art</li> 
+<li>01/19/14 (Matty Williams): suggestion for hyperlinks, etc. in e-version</li> 
+<li>01/19/14 (Nelson Gomez): typo in <b>intro</b> </li> 
+<li>01/19/14 (Bobby Jack): typos in <b>intro</b> </li> 
+<li><b>01/19/14:</b> Added some cover art - a picture of Halley's comet (hat tip
+to Thomas Griebel). Plus lots of other fixes, thanks to those at
+<a href=https://news.ycombinator.com/>Hacker News</a> and elsewhere</li> 
+<li>01/18/14 (Varun Vats): typo in <b>preface</b> </li> 
+<li>01/06/14 (Biswajit Mazumder @ Clemson): Clarification in <b>vm-segmentation</b> </li> 
+<li>01/06/14 (Nghia Huynh @ Texas): Incorrect type in lowlevellock in <b>threads-locks</b> </li> 
+<li>12/20/13 (Ernst Biersack @ France): typo in <b>file-raid</b> homework</li> 
+<li>12/17/13 (Emmett Witchel @ Texas): incorrect bit about NFS permissions <b>dist-nfs</b> </li> 
+<li>12/05/13 (Satyanarayana Shanmugam): typo in <b>file-lfs</b> picture</li> 
+<li>12/03/13 (Ruslan Kiselev): small fixes in <b>file-disk</b> and <b>file-raid</b> </li> 
+<li>11/22/13 (Satyanarayana Shanmugam): typos in <b>file-integrity</b> </li> 
+<li>11/14/13 (Satyanarayana Shanmugam): typo in RAID homework <b>file-raid</b> </li> 
+<li><b>11/05/13:</b> Some updates to <a href=file-intro.pdf>File Intro</a> - basically
+more details on fsync(), rename(), and how to use them for atomic update</li> 
+<li>10/18/13 (Huanchen Zhang): typo in <b>dist-nfs</b> </li> 
+<li>10/14/13 (Satyanarayana Shanmugam): clarified OOM in <b>vm-beyondphys-policy</b> </li> 
+<li>10/11/13 (Masashi Kishikawa): fixed two bugs in <b>threads-sema</b> </li> 
+<li>10/11/13 (Satyanarayana Shanmugam): small bug in <b>threads-cv</b> </li> 
+<li>09/20/13 (Masashi Kishikawa): fixed bug in figure in <b>vm-freespace</b> </li> 
+<li>09/17/13 (Tongxin Zheng): wrong modes in <b>cpu-mechanism</b> </li> 
+<li><b>09/06/13:</b> Some updates to <a href=cpu-mechanisms.pdf>Limited Direct
+Execution</a> chapter - small bug fix in <a href=threads-sema.pdf>Semaphores</a> </li> 
+<li>08/19/13 (Anand Mundada): small typo in <b>threads-sema</b> </li> 
+<li><b>08/15/13:</b> Moved all of the homework simulator information OUT of the end
+of chapters and into README files, which can be downloaded from the
+<a href=Homework/homework.html>homework page.</a> All that is left at the
+end of chapters with simulators are the questions you might want to
+answer by using the simulator</li> 
+<li><b>v0.60</b> 08/14/13: <b>v0.60 RELEASED:</b> Too much to list here; basically,
+went through the entire book and replaced text figures with actual drawn
+figures; made sure each chapter had at least one crux (problem); made sure
+that there were tips and asides throughout; reduced all previous sidebar
+material to just tips and asides; added citations in a few spots; added some
+new data here and there. All of this is now called <b>version 0.6</b> which is
+getting close to a finished product (modulo a few homeworks). The rough list
+of chapters that have been updated includes: intro (new asides), cpu-api
+(aside, citations), cpu-sched (crux), cpu-sched-lottery (new data, homework
+changes, new tip, crux), cpu-sched-mlfq (redid pictures entirely),
+cpu-sched-multi (added chapter itself, graphical pics), vm-api (fixed
+reference), vm-mechanism (resized figures for readability), vm-freespace
+(redid pictures), vm-paging (added crux, rewrote here and there, added summary
+at end of chapter), vm-smalltables (added crux, some rewrites here and there,
+added a cite), threads-intro (fixed references), threads-sema (added crux),
+threads-locks-usage (added new chapter, fixed bugs), threads-events (added
+chapter itself), file-intro (fixed reference), file-raid (added crux, rewrote
+bits and pieces, added a few citations), file-implementation (redid pictures
+entireyly), file-ffs (new data, added pictures), file-lfs (redid pictures
+entirely), file-integrity (added chapter itself), dist-intro (added pics)</li> 
+<li>08/12/13 (Torin Rudeen @ Princeton): many fixed in <b>threads-locks-usage</b> </li> 
+<li>08/03/13 (Charlotte Kissinger): typos in <b>file-devices</b> and <b>dialogue-persistence</b> and <b>file-raid</b> </li> 
+<li><b>08/02/13:</b> Added final <a href=dist-dialogue.pdf>distributed summary dialogue</a> </li> 
+<li><b>08/02/13:</b> Added a rough version on <a href=threads-locks-usage.pdf>concurrent data structures with locks</a> </li> 
+<li><b>08/02/13:</b> Added a rough version of a new chapter on <a href=threads-events.pdf>event-based concurrency</a> (finally!)</li> 
+<li><b>08/02/13:</b> Thinking about doing these long entries in a more verbose format</li> 
+<li>07/31/13 (Deepika Muthukumar): wrong XOR calculation in <b>file-integrity</b> </li> 
+<li>07/26/13 (Yue Zhuo): missing shift in <b>vm-smalltables</b> ; also
+encouragement to update the darn website, leading to a slew of updates</li> 
+<li><b>07/26/13:</b> Added new <a href=file-dialogue.pdf>summary dialogue</a> for file systems</li> 
+<li><b>07/26/13:</b> Added new hardcover edition</li> 
+<li><b>07/26/13:</b> Revised softcover edition</li> 
+<li><b>07/26/13:</b> Revised electronic full PDF</li> 
+<li><b>07/26/13:</b> New chapter on <a href=cpu-sched-multi.pdf>Multiprocessor Scheduling</a> </li> 
+<li><b>07/26/13:</b> New chapter on <a href=threads-bugs.pdf></a> (replaces and generalizes deadlock chapter)</li> 
+<li><b>07/26/13:</b> New chapter on <a href=file-integrity.pdf>Data Integrity</a> (replaces pending file-modern)</li> 
+<li><b>07/26/13:</b> Upcoming chapter on event-based concurrency is next</li> 
+<li>03/15/13 (Hrishikesh Amur): overclaim about windows device drivers</li> 
+<li>03/14/13 (Yufui Ren): graph typo in <b>cpu-sched</b> </li> 
+<li>02/26/13 (Ajaykrishna Raghavan): typo in cites in <b>vm-freespace</b> </li> 
+<li>02/21/13 (Nathan Dipiazza): typo in <b>vm-beyondphys</b> </li> 
+<li>02/17/13 (Zuyu Zhang): typo in <b>cpu-mechanism</b> </li> 
+<li>01/24/13 (Kaushik Kannan): footnote about AS randomization needed</li> 
+<li>01/21/13 (Lei Tian @ Nebraska-Lincoln): bug in disk.py homework tool</li> 
+<li>01/21/13 (Varun Vats): typo in <b>threads-intro</b> </li> 
+<li><b>01/12/13:</b> Updates to <b>vm-freespace, vm-segmentation</b> </li> 
+<li><b>01/09/13:</b> A number of fixes thanks to various bug reports: see <a href=errata.html>errata</a> </li> 
+<li>12/19/12 (B. Brahmananda Reddy): typo in <b>cpu-mechanism</b> </li> 
+<li>12/01/12 (Sandeep Ummadi): bugs in <b>vmm-intro</b> , <b>dialogue-concurrency</b> </li> 
+<li>10/20/12 (Joel Sommers @ Colgate): -pthread not -lpthread on link line in <b>intro,
+threads-api, threads-intro</b> </li> 
+<li>10/18/12 (Xu Di): permissions detail in <b>file-implementation</b> , bug in
+disk simulator</li> 
+<li>10/14/12 (Joel Sommers @ Colgate): missing destroy calls in <b>threads-api</b> </li> 
+<li>10/01/12 (Jerod Weinman @ Grinnell): typos in <b>vm-freespace</b> , <b>file-disks</b> , <b>
+file-journaling</b> </li> 
+<li>09/01/12 (David Hanle): typo in <b>vm-segmentation</b> </li> 
+<li>08/20/12 (Bala Subrahmanyam Kambala): typo in <b>dialogue-virtualization</b> </li> 
+<li><b>07/19/12:</b> Moved to one less easy piece!</li> 
+<li>06/20/12 (Benita Bose): typos in <b>file-ffs, dist-intro, file-journaling,
+file-implementation</b> </li> 
+<li><b>06/15/12:</b> Finally caught up on many many student fixes and such</li> 
+<li>05/19/12 (Suriyhaprakhas Balaram Sankari): typos in <b>file-devices</b> ,
+<b>file-disks</b> </li> 
+<li>05/17/12 (Sharad Punuganti): typos in <b>dist-nfs</b> , <b>file-intro</b> , <b>
+threads-intro</b> , <b>dist-intro</b> </li> 
+<li>05/14/12 (Adam Eggum): disk simulator crash</li> 
+<li>05/12/12 (Guilherme Baptista): typos in <b>threads-sema</b> </li> 
+<li>04/24/12 (Finn Kuusisto): Many typos in <b>cpu-api</b> , <b>cpu-mechanism</b> , <b>cpu-sched</b> ,
+<b>vm-segmentation</b> , <b>vm-freespace</b> (actually used the word <&ldquo;>suck<&rdquo;> by accident!),
+<b>vm-smalltables</b> , <b>vm-beyondphys-policy</b> , <b>threads-cv</b> , <b>file-journaling</b> </li> 
+<li>04/24/12 (Sivaraman Sivaraman): mistake in math term in <b>file-disks</b> </li> 
+<li>04/12/12 (James Perry @ UM-D): many typos in <b>file-journaling,
+file-implementation, file-ffs</b> </li> 
+<li><b>04/08/12:</b> Updated <b>file-journaling</b> somewhat substantially</li> 
+<li>04/03/12 (Jake Gillberg): wrong variable in <b>threads-cv</b> </li> 
+<li>03/22/12 (Emily Jacobson): RAID terminology fix in <b>file-raid</b> </li> 
+<li><b>03/20/12:</b> More pictures in <b>file-devices</b> ; a little more text too</li> 
+<li>03/12/12 (Sivaraman Sivaraman): two typos in <b>threads-api</b> and one small
+but critical fix in <b>vm-segmentation</b> example calculation.</li> 
+<li>03/12/12 (Benita Bose): typo in <b>vm-dialogue</b> , and a few problems in <b>threads-intro</b> </li> 
+<li>03/10/12 (Sivaraman Sivaraman): cache sizes of N, N+1 mixed up in
+<b>vm-beyondphys-policy</b> </li> 
+<li>03/05/12 (Sivaraman Sivaraman): typo in <b>vm-mechanism</b> , which I kept
+claiming wasn't there! (but it was)</li> 
+<li>03/05/12 (Shreevatsa R.): many fixes in <b>threads-lock</b> , <b>threads-cv</b> </li> 
+<li>03/05/12 (Tony Adkins): typo in <b>dialogue-concurrency</b> </li> 
+<li>03/01/12 (Benita Bose): typo in <b>vm-mechanism</b> </li> 
+<li>03/01/12 (Shreevatsa R.): typos in <b>threads-init</b> and <b>threads-api</b> </li> 
+<li>02/14/12 (James Perry @ UM-D): typo in <b>cpu-sched-lottery</b> ; typo
+in <b>cpu-api, vm-tlbs, vm-intro, threads-api, file-implementation</b> </li> 
+<li>02/14/12 (Ripudaman Singh): small code bug in <b>threads-deadlock</b> </li> 
+<li>02/11/12 (Charlotte Kissinger): Figures in <b>cpu-sched</b> are incorrectly
+labeled</li> 
+<li><b>02/10/12:</b> Update of <a href=dist-nfs.pdf>NFS chapter</a> </li> 
+<li><b>02/10/12:</b> Update of <a href=vm-tlbs.pdf>TLB code example</a> </li> 
+<li>02/09/12 (Tony Adkins): Code example in <b>vm-tlbs</b> is unclear</li> 
+<li>02/04/12 (Xiang Peng): unrestricted in <b>vm-mechanism</b> should be restricted (or privileged)</li> 
+<li><b>01/12/12:</b> Minor fixes to many many chapters thanks to many students</li> 
+<li><b>12/06/11:</b> New <a href=dist-intro.pdf>Distributed Systems intro</a> </li> 
+<li><b>12/06/11:</b> New <a href=dialogue-distribution.pdf>Distributed Systems dialogue</a> </li> 
+<li><b>11/03/11:</b> A number of fixes to devices and all early file system chapters</li> 
+<li><b>10/11/11:</b> Re-org of concurrency chapters</li> 
+<li>Fall'12 (Srinivasan Thirunarayanan): Fixes to <b>file-implementation,
+file-journaling, file-lfs, dist-afs, file-devices, threads-sema, vm-intro,
+file-implementation homework, file-disks, vm-beyondphys-policy, vm-beyondphys,
+vm-smalltables, vm-paging, vm-paging homework, vm-relocation, cpu-api</b> </li> 
+<li>Fall'12 (Abhirami Senthilkumaran): Fixes to <b>file-intro,
+file-implementation, file-journaling, file-lfs, file-disk, vmm-intro,
+vm-beyondphys-policy, cpu-sched-lottery, intro, vm-smalltables</b> </li> 
+<li>Fall'12 (Huanchen Zhang): Fixes to <b>file-raid, file-implementation,
+file-journaling, vm-mechanism, vm-tlbs, vm-smalltables, threads-locks,
+cpu-sched</b> </li> 
+<li>Fall'12 (Henry Abbey): Fixes to <b>threads-deadlock, file-devices,
+file-implementation, dist-nfs, vm-tlbs</b> </li> 
+<li>Fall'12 (Sy Jin Cheah): Fixes to <b>intro, file implementation, file-ffs,
+file-lfs, dist-afs, threads-cv</b> </li> 
+<li>Fall'12 (Cara Lauritzen): Fixes to <b>threads-deadlock, file-devices</b> </li> 
+<li>Fall'12 (Brennan Payne): Suggestion for more/better summaries, fixes to
+<b>vm-segmentation</b> </li> 
+<li>Fall'12 (Ripudaman Singh): Fixes to <b>vm-paging, vm-beyondphys-policy</b> ,
+homeworks for both</li> 
+<li>Fall'12 (Nathan Sullivan): Fixes to <b>intro, cpu-sched-lottery,
+vm-paging,
+vm-beyondphys, vm-beyondphys-policy, lab-tutorial</b> </li> 
+<li>Fall'12 (Lihao Wang): Fixes to <b>vm-tlbs, vm-relocation</b> </li> 
+<li>Fall'12 (Balasubramanian): Fixes to <b>cpu-api, cpu-mechanisms</b> </li> 
+<li>Fall'12 (Meng Huang): Fixes to <b>file-implementation, threads-cv</b> </li> 
+<li>Fall'12 (Ross Aiken): Files to <b>file-journaling</b> </li> 
+<li>Fall'12 (Seth Pollen): Fixes to <b>file-journaling</b> </li> 
+<li>09/20/11 (Huanchen Zhang): Process intro: extra <i>will</i> </li> 
+<li>09/20/11 (Srinivasan Thirunarayanan): Process API: typo in code snippet.</li> 
+<li>09/20/11 (Brennan Payne): Segmentation: typo in <i>we get a physical address of
+39016, which is not get the correct physical address.</i> </li> 
+<li>09/06/11 (Martha Ferris): Intro: <i>to difficult</i> s.b. <i>to be difficult</i> 
+... Intro: <i>not to have write in assembly</i> s.b. <i>not to have to write in
+assembly</i> </li> 
+<li>07/30/11 (Karl Wallinger): Scheduling: <i>...of course there a number of
+different...</i> missing an <i>are</i> </li> 
+<li><b>07/25/11:</b> Added new chapter on <a href=threads-api.pdf>thread API</a> </li> 
+<li><b>07/25/11:</b> Small update to <a href=threads-intro.pdf>thread intro</a> </li> 
+<li><b>07/05/11:</b> Added new <a href=threads-dialogue.pdf>dialogue</a> </li> 
+<li><b>06/29/11:</b> Added new simulator (lottery.py) and homework into this <a href=cpu-sched-lottery.pdf>chapter</a> </li> 
+<li><b>06/29/11:</b> Update of <a href=cpu-sched-lottery.pdf>lottery scheduling</a> </li> 
+<li><b>06/26/11:</b> Updated <a href=toc.pdf>table of contents</a> </li> 
+<li><b>06/24/11:</b> Added new simulator (paging-policy.py) and homework <a href=vm-beyondphys-policy.pdf>here</a> </li> 
+<li><b>06/24/11:</b> Added new homework to this <a href=vm-tlbs.pdf>chapter</a> </li> 
+<li><b>06/24/11:</b> Added new homework to this <a href=cpu-mechanisms.pdf>chapter</a> </li> 
+<li><b>06/23/11:</b> Added new simulator (relocation.py) into this <a href=vm-mechanism.pdf>chapter</a> </li> 
+<li><b>06/23/11:</b> Updated intro to <a href=vm-mechanism.pdf>address translation</a> </li> 
+<li><b>06/13/11:</b> Slight update to <a href=intro.pdf>intro chapter.</a> </li> 
+<li>06/14/11 (Karl Wallinger): Intro: extra <i>would</i> </li> 
+<li>06/08/11 (Mike Griepentrog): Lab: Expert C Programming is still in print</li> 
+<li><b>06/08/11:</b> Added new disk simulator (disk.py) and homework <a href=file-disks.pdf>here.</a> </li> 
+<li><b>06/03/11:</b> Added new RAID simulator (raid.py) and homework <a href=file-raid.pdf>here.</a> </li> 
+<li><b>06/03/11:</b> Started this page to track book updates</li> 
+<li>05/20/11 (Ahmed Fikri): About 30 different comments, too many to list here</li> 
+<li>05/14/11 (Dustin Metzler): Chapter numbering confusing</li> 
+<li>05/11/11 (Radford Smith): FFS: to allocate the data blocks of an file ...
+LFS: and hence to overall name of the log-structured file system ...
+LFS: (where NxM) .. LFS: On top the mechanism described above</li> 
+<li>05/10/11 (Dustin Passofaro): AFS: <i>state file</i> should be <i>stale file</i> 
+... NFS <i>if case</i> should be <i>in case</i> ... RAID: <i>other interesting that</i> 
+should be <i>other interesting ideas that</i> ... Intro: <i>it simple</i> -> <i>it
+simply</i> ... Deadlock: <i>more more</i> should be <i>more</i> ... Locks: <i>it
+simple calls</i> s.b. <i>it simply calls</i> ... Devices: <i>for the OS send</i> 
+s.b. <i>for the OS to send</i> </li> 
+<li>05/10/11 (Alex Wyler): <b>file-journaling</b> <i>now</i> and not <i>not</i> in <i>
+we are not/now also writing to the journal first</i> </li> 
+<li>05/06/11 (Kevin Liu): <b>cpu-api</b> <i>complete</i> mispelled as <i>comlplete</i> </li> 
+<li>04/27/11 (Radford Smith): <b>threads-locks-hw</b> forgot <i>lock_t</i> at end of typedef.</li> 
+<li>04/25/11 (Murugan Kandaswamy): <b>dist-nfs</b> ... <i>server</i> (not <i>
+client</i> ) does not reply in a timely manner?</li> 
+<li>03/11/11 (Ryland Herrick): <b>threads-sema</b> <i>Lookups</i> , not <i>inserts</i> .</li> 
+<li>03/11/11 (Ryland Herrick): <b>threads-locks-hw</b> Missing <i>!</i> in LL/SC lock.</li> 
+<li>03/02/11 (Alex Wyler): <b>paging-smalltables</b> Bits PFN7 and PT7 don't exist.</li> 
+<li>03/02/11 (Jay Lim): <b>vmm-intro</b> <i>discuss</i> not <i>discus</i> .</li> 
+<li>03/02/11 (Zef RosnBrick): <b>vm-segmentation</b> fixed <i>is not get the
+correct physical address</i> by removing get</li> 
+<li>03/02/11 (Zef RosnBrick): <b>cpu-sched-mlfq</b> replaced <i>of</i> with <i>than</i> </li> 
+<li>02/23/11 (Dan Soendergaard @ U. Aarhus): <b>dialogue-virtualization</b> <i>illusion</i> 
+misspelled as <i>illision</i> </li> 
+<li>05/10/10 (Tuo Wang): <b>vm-relocation</b> 32KB is 32768</li> 
+<li>05/10/10 (Tuo Wang): <b>vm-relocation</b> fetch from correct addresses</li> 
+<li>05/10/10 (Tuo Wang): <b>vm-paging</b> number of numerical typos</li> 
+<li>05/10/10 (Tuo Wang): <b>vm-smalltables</b> 55 not 45</li> 
+<li>05/10/10 (Tuo Wang): <b>file-lfs</b> unclear sentence about buffering</li> 
+<li>05/08/10 (Matt Reichoff): <b>file-raid</b> <i>design</i> should be <i>designed</i> </li> 
+<li>03/05/10 (Cody Hanson): <b>vm-relocation</b> <i>you can how</i> should be <i>you can see how</i> </li> 
+<li>01/24/10 (Natasha Eilbert): <b>lab-tutorial</b> p.1 you said <i>Unlike Java,
+there is no connection between the file name and the contents of the file;
+because of that, just use your common sense in naming files.</i> After thinking
+about this for a little bit I got what you meant, but at first was confused
+and thought you were saying that in C there actually _shouldn't_ be any
+relation at all between the filename and its contents! Maybe you could say
+something like <i>no enforced connection</i> .</li> 
+<li>01/24/10 (Natasha Eilbert): <b>lab-tutorial</b> p. 4 <i>that that</i> should
+just be <i>that</i> </li> 
+<li>01/24/10 (Natasha Eilbert): <b>lab-tutorial</b> p. 8 <i>defintion</i> should be
+<i>definition</i> </li> 
+<li>10/24/09 (Kevin Liu): m2 - Sample assembly code on page two shows address 128, 130 and
+134. However, the addresses in the diagram on page 3 shows addresses 128, 130,
+133.</li> 
+<li>10/24/09 (Kevin Liu): m3 page 5: next 11 bits should be next 12 bits</li> 
+<li>10/24/09 (Kevin Liu): m3 page 5: In the C pseucode-code section, && should be replaced by &.</li> 
+<li>10/24/09 (Kevin Liu): m3 page 8: Perhaps mention that the free list management policy does not get
+rid of external fragmentation, but simply tries to minimize it.</li> 
+<li>10/24/09 (Kevin Liu): m4 page 4: The example showing the translation from virtual address 21 seems
+to have a mistake. We picked PFN 5, however, going by Figure 12.2, we should
+have picked PFN 7. This would mean that our physical address should be 117
+instead of 85.</li> 
+<li>10/24/09 (Kevin Liu): m5 page 2: CISC is defined as <i>complex-instruction set computing</i> , however,
+RISC is defined as <i>reduced-instruction set computers</i> . Should change one of
+the two to make the definitions consistent.</li> 
+<li>10/24/09 (Kevin Liu): m6 page 3: <i>Specifically, we use a tiny 16KB address space with 1KB pages
+(Figure 14.2)</i> . Should be Figure 14.1.</li> 
+<li>10/24/09 (Kevin Liu): m6 page 8: <i>At PhysAddr1 (some physical address, or, if the page directory is
+page-aligned, just the physical frame number), we have the first chunk of 16
+page table entries for the first 16 VPNs in the address space. It would look
+something like what you see in Figure 14.2.</i> Should be Figure 14.3. Also, the
+text refers to the diagrams as <i>Figures</i> but they are actually labeled as
+<i>Tables</i> .</li> 
+<li>10/24/09 (Kevin Liu): m6 page 10: page 254 of VA space is mapped to PFN
+55, not 45.</li> 
+<li>10/24/09 (Kevin Liu): m8 page 10: <i>However, in many cases the importance of said algorithms has
+decreased, as the discrepancy between memory-access and disk-access times has
+increased.</i> Should be decreased, not increased.</li> 
+</li> </li> 
+
+</li> </ul> </p> </td> </tr> </table> 
+
+
+
+
+
+

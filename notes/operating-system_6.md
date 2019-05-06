@@ -21,6 +21,21 @@
     3. 0x1008 (read the code)
     4. 0x1012 (read the code)
     3. a[2]: 0x4008 (access to variable)
-- 
+
+## Page Replacement Algorithms
+
+- OPT... the optimal algorithm to minimize the number of PAGE IN. It's just an idea, so we can't implement (we can't see the future)  
+Here are the compromises:  
+- LRU... Least Recently Used, a good compromise of OPT.
+- NRU... Not Recently Used. The thing that you want to throw out, since you don't have to overwrite the file (no saving)
+- Clock (second chance)... Go around the memory space, if "used", change the status to "unused" and increment the pointer. If you come back the next time and it's still "unused", use that space. It might get used while you go aruond the clock.
+- 80-20 workload, looping workload
+
+## Address Translation
+- twp components in the virtual address
+    - VPN: virtual page number
+    - Offset: offset within the page
+    - VPN is the part that translates virtual address to physical address, offset is like the "internal adress", so whatever the VPN is, it gets passed down
+    - VPN -> Page Table Entry (PTE, 4MB/Table) -> PFN
 
 

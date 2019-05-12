@@ -1,0 +1,20 @@
+00400000-00401000 r-xp 00000000 00:00 351323                     /mnt/c/Users/shusa/SFC/2019a/operating-system/scripts/addressing/addressing.out
+00600000-00601000 r--p 00000000 00:00 351323                     /mnt/c/Users/shusa/SFC/2019a/operating-system/scripts/addressing/addressing.out
+00601000-00602000 rw-p 00001000 00:00 351323                     /mnt/c/Users/shusa/SFC/2019a/operating-system/scripts/addressing/addressing.out
+01c17000-01c38000 rw-p 00000000 00:00 0                          [heap]
+7feccd830000-7feccd9f0000 r-xp 00000000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7feccd9f0000-7feccd9f9000 ---p 001c0000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7feccd9f9000-7feccdbf0000 ---p 000001c9 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7feccdbf0000-7feccdbf4000 r--p 001c0000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7feccdbf4000-7feccdbf6000 rw-p 001c4000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7feccdbf6000-7feccdbfa000 rw-p 00000000 00:00 0
+7feccdc00000-7feccdc25000 r-xp 00000000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
+7feccdc25000-7feccdc26000 r-xp 00025000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
+7feccde25000-7feccde26000 r--p 00025000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
+7feccde26000-7feccde27000 rw-p 00026000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
+7feccde27000-7feccde28000 rw-p 00000000 00:00 0
+7feccdf60000-7feccdf61000 rw-p 00000000 00:00 0
+7feccdf70000-7feccdf71000 rw-p 00000000 00:00 0
+7feccdf80000-7feccdf81000 rw-p 00000000 00:00 0
+7ffff9ae8000-7ffffa2e8000 rw-p 00000000 00:00 0                  [stack]
+7ffffa37c000-7ffffa37d000 r-xp 00000000 00:00 0                  [vdso]

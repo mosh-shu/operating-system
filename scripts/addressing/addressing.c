@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include <unistd.h>
 
 int global;
 int global2;
@@ -59,6 +60,8 @@ int main() {
     printf("*m1 = %d\n", *m1);
     printf("*m2 = %d\n", *m2);
     printf("\n");
+
+    sleep(60);
 }
 
 int add(int x) {

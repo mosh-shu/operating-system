@@ -2,39 +2,58 @@
 #include<stdlib.h>
 
 int global;
-int global2;
+int global2 = 5;
  
-int sumLocal(int x) {
-    int a = 3;
-    int b = 2;
-    int *pa, *pb;
-    pa = &a;
-    pb = &b;
-    int sum = a + b;
-    int ans = sum * x;
-    printf("ans = %d\n", ans);
-    printf("pa = %p\n", pa);
-    printf("pb = %p\n", pb);
-    printf("*pa = %d\n", *pa);
-    printf("*pb = %d\n", *pb);
-    return ans;
-}
- 
+int add(int x);
+int sub(int x);
+
 int main() {
-    int y;
-    int *py, *pglobal, *pglobal2, (*psumLocal)(int);
+    int ya, ys;
+    int *pya, *pys, *pglobal, *pglobal2, (*padd)(int), (*psub)(int);
     global = 4;
-    global2 = 5;
-    y = sumLocal(global);
+
+    ya = add(global);
+    ys = sub(global2);
+
     pglobal = &global;
     pglobal2 = &global2;
-    py = &y;
-    psumLocal = sumLocal;
-    printf("pglobal = %p\n", pglobal);
-    printf("pglobal2 = %p\n", pglobal2);
-    printf("py = %p\n", py);
-    printf("psumLocal = %p\n", psumLocal);
+    pya = &ya;
+    pys = &ys;
+    padd = &add;
+    psub = &sub;
+
+    printf("\nPointers to global variables: \n");
+    printf("\tpglobal = %p\n", pglobal);
+    printf("\tpglobal2 = %p\n", pglobal2);
+    printf("\nPointers to local variables: \n");
+    printf("\tpya = %p\n", pya);
+    printf("\tpys = %p\n", pys);
+    printf("\nPointers to functions: \n");
+    printf("\tpadd = %p\n", padd);
+    printf("\tpsub = %p\n", psub);
+
+    printf("\nValues of each variables\n");
     printf("*pglobal = %d\n", *pglobal);
     printf("*pglobal2 = %d\n", *pglobal2);
-    printf("*py = %d\n", *py);
+    printf("*pya = %d\n", *pya);
+    printf("*pys = %d\n", *pys);
+    printf("(*padd)(global) = %d\n", (*padd)(global));
+    printf("(*psub)(global2) = %d\n", (*psub)(global2));
+    printf("\n");
+}
+
+int add(int x) {
+    int a = 2;
+    int b = 3;
+    int sum = a + b;
+    int ans = sum * x;
+    return ans;
+}
+
+int sub(int x) {
+    int a = 2;
+    int b = 3;
+    int sum = a - b;
+    int ans = sum * x;
+    return ans;
 }

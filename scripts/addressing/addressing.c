@@ -2,6 +2,7 @@
 #include<stdlib.h>
 
 int global;
+int global2;
  
 int sumLocal(int x) {
     int a = 3;
@@ -21,13 +22,19 @@ int sumLocal(int x) {
  
 int main() {
     int y;
-    int *py, *pglobal;
+    int *py, *pglobal, *pglobal2, (*psumLocal)(int);
     global = 4;
+    global2 = 5;
     y = sumLocal(global);
     pglobal = &global;
+    pglobal2 = &global2;
     py = &y;
+    psumLocal = sumLocal;
     printf("pglobal = %p\n", pglobal);
+    printf("pglobal2 = %p\n", pglobal2);
     printf("py = %p\n", py);
+    printf("psumLocal = %p\n", psumLocal);
     printf("*pglobal = %d\n", *pglobal);
+    printf("*pglobal2 = %d\n", *pglobal2);
     printf("*py = %d\n", *py);
 }

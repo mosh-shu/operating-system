@@ -4,37 +4,37 @@ Pss:                   4 kB
 Pss:                   4 kB
 00601000-00602000 rw-p 00001000 00:00 351323                     /mnt/c/Users/shusa/SFC/2019a/operating-system/scripts/addressing/addressing.out
 Pss:                   4 kB
-01c17000-01c38000 rw-p 00000000 00:00 0                          [heap]
+01e77000-01e98000 rw-p 00000000 00:00 0                          [heap]
 Pss:                   8 kB
-7feccd830000-7feccd9f0000 r-xp 00000000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
-Pss:                  77 kB
-7feccd9f0000-7feccd9f9000 ---p 001c0000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7fead7630000-7fead77f0000 r-xp 00000000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+Pss:                  58 kB
+7fead77f0000-7fead77f9000 ---p 001c0000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
 Pss:                   0 kB
-7feccd9f9000-7feccdbf0000 ---p 000001c9 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7fead77f9000-7fead79f0000 ---p 000001c9 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
 Pss:                   0 kB
-7feccdbf0000-7feccdbf4000 r--p 001c0000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7fead79f0000-7fead79f4000 r--p 001c0000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
 Pss:                   8 kB
-7feccdbf4000-7feccdbf6000 rw-p 001c4000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
+7fead79f4000-7fead79f6000 rw-p 001c4000 00:00 429274             /lib/x86_64-linux-gnu/libc-2.23.so
 Pss:                   8 kB
-7feccdbf6000-7feccdbfa000 rw-p 00000000 00:00 0
+7fead79f6000-7fead79fa000 rw-p 00000000 00:00 0
 Pss:                   8 kB
-7feccdc00000-7feccdc25000 r-xp 00000000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
-Pss:                  39 kB
-7feccdc25000-7feccdc26000 r-xp 00025000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
+7fead7a00000-7fead7a25000 r-xp 00000000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
+Pss:                  30 kB
+7fead7a25000-7fead7a26000 r-xp 00025000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
 Pss:                   4 kB
-7feccde25000-7feccde26000 r--p 00025000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
+7fead7c25000-7fead7c26000 r--p 00025000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
 Pss:                   4 kB
-7feccde26000-7feccde27000 rw-p 00026000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
+7fead7c26000-7fead7c27000 rw-p 00026000 00:00 429260             /lib/x86_64-linux-gnu/ld-2.23.so
 Pss:                   4 kB
-7feccde27000-7feccde28000 rw-p 00000000 00:00 0
+7fead7c27000-7fead7c28000 rw-p 00000000 00:00 0
 Pss:                   4 kB
-7feccdf60000-7feccdf61000 rw-p 00000000 00:00 0
+7fead7cb0000-7fead7cb1000 rw-p 00000000 00:00 0
 Pss:                   4 kB
-7feccdf70000-7feccdf71000 rw-p 00000000 00:00 0
+7fead7cc0000-7fead7cc1000 rw-p 00000000 00:00 0
 Pss:                   4 kB
-7feccdf80000-7feccdf81000 rw-p 00000000 00:00 0
+7fead7cd0000-7fead7cd1000 rw-p 00000000 00:00 0
 Pss:                   4 kB
-7ffff9ae8000-7ffffa2e8000 rw-p 00000000 00:00 0                  [stack]
+7fffcee7f000-7fffcf67f000 rw-p 00000000 00:00 0                  [stack]
 Pss:                  12 kB
-7ffffa37c000-7ffffa37d000 r-xp 00000000 00:00 0                  [vdso]
+7fffcfb1d000-7fffcfb1e000 r-xp 00000000 00:00 0                  [vdso]
 Pss:                   4 kB

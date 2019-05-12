@@ -2,21 +2,27 @@
 #include<stdlib.h>
 
 int global;
-int global2 = 5;
- 
+int global2;
+int global3 = 5;
+int global4 = 6;
+
 int add(int x);
 int sub(int x);
 
 int main() {
     int ya, ys;
-    int *pya, *pys, *pglobal, *pglobal2, (*padd)(int), (*psub)(int);
+    int *pya, *pys, *pglobal, *pglobal2, *pglobal3, *pglobal4;
+    int (*padd)(int), (*psub)(int);
     global = 4;
+    global2 = 8;
 
     ya = add(global);
     ys = sub(global2);
 
     pglobal = &global;
     pglobal2 = &global2;
+    pglobal3 = &global3;
+    pglobal4 = &global4;
     pya = &ya;
     pys = &ys;
     padd = &add;
@@ -25,6 +31,8 @@ int main() {
     printf("\nPointers to global variables: \n");
     printf("\tpglobal = %p\n", pglobal);
     printf("\tpglobal2 = %p\n", pglobal2);
+    printf("\tpglobal3 = %p\n", pglobal3);
+    printf("\tpglobal4 = %p\n", pglobal4);
     printf("\nPointers to local variables: \n");
     printf("\tpya = %p\n", pya);
     printf("\tpys = %p\n", pys);
@@ -35,6 +43,8 @@ int main() {
     printf("\nValues of each variables\n");
     printf("*pglobal = %d\n", *pglobal);
     printf("*pglobal2 = %d\n", *pglobal2);
+    printf("*pgloba3 = %d\n", *pglobal3);
+    printf("*pglobal4 = %d\n", *pglobal4);
     printf("*pya = %d\n", *pya);
     printf("*pys = %d\n", *pys);
     printf("(*padd)(global) = %d\n", (*padd)(global));

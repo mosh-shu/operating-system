@@ -13,6 +13,8 @@ int main() {
     int ya, ys;
     int *pya, *pys, *pglobal, *pglobal2, *pglobal3, *pglobal4;
     int (*padd)(int), (*psub)(int);
+    int *m1, *m2;
+
     global = 4;
     global2 = 8;
 
@@ -28,6 +30,9 @@ int main() {
     padd = &add;
     psub = &sub;
 
+    m1 = malloc(20);
+    m2 = malloc(20);
+
     printf("\nPointers to global variables: \n");
     printf("\tpglobal = %p\n", pglobal);
     printf("\tpglobal2 = %p\n", pglobal2);
@@ -39,6 +44,8 @@ int main() {
     printf("\nPointers to functions: \n");
     printf("\tpadd = %p\n", padd);
     printf("\tpsub = %p\n", psub);
+    printf("\tm1 = %p\n", m1);
+    printf("\tm2 = %p\n", m2);
 
     printf("\nValues of each variables\n");
     printf("*pglobal = %d\n", *pglobal);
@@ -49,6 +56,8 @@ int main() {
     printf("*pys = %d\n", *pys);
     printf("(*padd)(global) = %d\n", (*padd)(global));
     printf("(*psub)(global2) = %d\n", (*psub)(global2));
+    printf("*m1 = %d\n", *m1);
+    printf("*m2 = %d\n", *m2);
     printf("\n");
 }
 

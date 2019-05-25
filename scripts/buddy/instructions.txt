@@ -1,0 +1,25 @@
+Write an interactive demonstration of a buddy memory allocator. Your demo should allow 64 blocks to be allocated and deallocated, and it should correctly merge freed blocks. The output should be something like that in Fig. 5.2. Each time your program splits a block, it should add a ’|’ to show where the split happened. ’-’ represents free blocks, and ’#’ represents in-use blocks. The two numbers printed out as in 0/4 represent the beginning address and number of blocks in a chunk.
+Your program should take three one-letter commands: ’a’ for allocate, ’f’ for free, and ’q’ for quit. The second argument on a line should be the number of blocks (for allocate) or the address, or first block number, of the allocated chunk (for free). If two neighboring blocks are both allocated, but were part of separate allocations, be careful to only free the one in the actual request! For large numbers of blocks, there are many possible data structures you
+could use to track the set of blocks that are in use and the size of chunks.
+
+% ./buddy-demo 
+|----------------------------------------------------------------| 
+How many blocks do you want to allocate/free? 
+a 4 
+(splitting 0/64) 
+(splitting 0/32) 
+(splitting 0/16) 
+(splitting 0/8) 
+Blocks 0-3 allocated: 
+|####|----|--------|----------------|--------------------------------| 
+How many blocks do you want to allocate/free? 
+a 16 
+Blocks 16-31 allocated: 
+|####|----|--------|################|--------------------------------| 
+How many blocks do you want to allocate/free? 
+f 0 
+(merging 0/4 and 4/4) 
+(merging 0/8 and 8/8) 
+Blocks 0-3 freed: |----------------|################|--------------------------------|
+How many blocks do you want to allocate/free? q
+%

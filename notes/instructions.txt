@@ -1,0 +1,28 @@
+In class last week, we messed around with an approximate counter using
+pthreads. You should have a program that spawns #NUM_THREADS and
+counts down a counter named gcounter from an initial value GCOUNTER,
+and prints out some values along the way.
+It should be using a threshold for updating the global counter from
+the approximate values. (That should be a #define, but in my own code
+is still hard-coded, which is very poor practice.) A threshold of 1
+is semantically equivalent to a single shared global counter
+controlled with a lock, except that it uses *two* locks instead of
+just one.
+We can call the original thread the ”master” and the newly-spawned
+ones ”worker” threads.
+Let’s investigate the scalability of locking a little bit more. Do the following:
+1. Determine the number of cores on your CPU.
+We have two variables we want to investigate, the number of threads
+and the update threshold.
+2. Vary NUM_THREADS from 1 to 1000 in some reasonable step size.
+Vary the threshold from 1 to 1000 in some reasonable step size.
+Execute and record the time taken. On a Mac or Linux, use the
+”time” command. You should have real (wall clock), user and system
+time.
+n.b.: You will want to *not* print out anything during the
+threads looping. It’s okay for the master thread to wake up and
+print occasionally, though.
+3. Plot those in interesting/pretty ways that tell us something about
+the performance. What number of threads performs best? Is that
+constant, or does it depend on the size of the update threshold?
+

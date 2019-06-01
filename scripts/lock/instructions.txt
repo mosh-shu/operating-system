@@ -15,7 +15,6 @@ Let’s investigate the scalability of locking a little bit more. Do the followi
 We have two variables we want to investigate, the number of threads
 and the update threshold.
 2. Vary NUM_THREADS from 1 to 1000 in some reasonable step size.
-Vary the threshold from 1 to 1000 in some reasonable step size.
 Execute and record the time taken. On a Mac or Linux, use the
 ”time” command. You should have real (wall clock), user and system
 time.

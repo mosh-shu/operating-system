@@ -81,28 +81,25 @@ void *mythread(void *arg)
 {
     int lcounter = GCOUNTER / NUM_THREADS;
     int mythreadid = *(int *)arg;
-    printf("%d: start\n", mythreadid);
     /* lcounter here is just the local loop -- how many times are we going to loop? */
     while (lcounter)
     {
-        if (get(&global_counter) % 1000000 == 0 && get(&global_counter) > 0)
-            printf("%d: lcounter: %d gcounter: %d\n", mythreadid, lcounter, get(&global_counter));
         update(&global_counter, mythreadid, +1); /* call the shared counter's update routine */
         lcounter--;
     }
-    printf("lcounter: %d\n", lcounter);
     return NULL;
 }
 
 int main(int argc, char *argv[])
 {
+    int threshold;
     pthread_t threads[NUM_THREADS];
     int rc;
     int *threadid;
-    printf("main: begin\n");
 
+    threshold = (int)strtol(argv[1], NULL, 10);
     /* First, initialize our shared counter structure; 1000000 is the "threshold", how often the local values update the global */
-    init(&global_counter, 100);
+    init(&global_counter, threshold);
 
     /* create our threads and fire them off */
     for (int i = 0; i < NUM_THREADS; i++)
@@ -112,13 +109,10 @@ int main(int argc, char *argv[])
         rc = pthread_create(&threads[i], NULL, mythread, threadid);
     }
     // join waits for the threads to finish
-    printf("Okay, main() (our original thread) now waiting...\n");
     for (int i = 0; i < NUM_THREADS; i++)
     {
         rc = pthread_join(threads[i], NULL);
         assert(rc == 0);
     }
-    printf("get(&global_counter): %d\n", get(&global_counter));
-    printf("main: end\n");
     return 0;
 }

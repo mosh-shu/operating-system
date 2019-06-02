@@ -1,0 +1,133 @@
+
+THRESHOLD:1
+trial:1
+
+real	0m2.310s
+user	0m4.078s
+sys	0m11.109s
+
+trial:2
+
+real	0m2.718s
+user	0m5.422s
+sys	0m14.969s
+
+trial:3
+
+real	0m2.651s
+user	0m4.859s
+sys	0m14.016s
+
+trial:4
+
+real	0m2.853s
+user	0m5.781s
+sys	0m15.688s
+
+trial:5
+
+real	0m2.740s
+user	0m5.750s
+sys	0m14.828s
+
+trial:6
+
+real	0m2.799s
+user	0m5.359s
+sys	0m15.750s
+
+trial:7
+
+real	0m2.814s
+user	0m5.875s
+sys	0m14.109s
+
+trial:8
+
+real	0m2.443s
+user	0m4.406s
+sys	0m13.391s
+
+trial:9
+
+real	0m2.328s
+user	0m4.188s
+sys	0m10.906s
+
+trial:10
+
+real	0m2.798s
+user	0m5.234s
+sys	0m14.797s
+
+-------
+THRESHOLD:10
+trial:1
+
+real	0m0.707s
+user	0m2.984s
+sys	0m0.781s
+
+trial:2
+
+real	0m0.736s
+user	0m3.766s
+sys	0m0.828s
+
+trial:3
+
+real	0m0.720s
+user	0m3.188s
+sys	0m1.266s
+
+trial:4
+
+real	0m0.683s
+user	0m3.188s
+sys	0m0.828s
+
+trial:5
+
+real	0m0.714s
+user	0m3.750s
+sys	0m1.016s
+
+trial:6
+
+real	0m0.911s
+user	0m5.281s
+sys	0m1.250s
+
+trial:7
+
+real	0m0.863s
+user	0m4.844s
+sys	0m1.359s
+
+trial:8
+
+real	0m0.974s
+user	0m5.750s
+sys	0m1.313s
+
+trial:9
+
+real	0m0.949s
+user	0m5.422s
+sys	0m1.625s
+
+trial:10
+
+real	0m0.882s
+user	0m4.875s
+sys	0m1.484s
+
+-------
+THRESHOLD:100
+trial:1
+
+real	0m0.826s
+user	0m6.016s
+sys	0m0.016s
+
+trial:2

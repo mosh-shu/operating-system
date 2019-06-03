@@ -1,13 +1,9 @@
-echo > result.txt
-for i in 1 10 100 1000 10000 100000 1000000 10000000
-do
-echo THRESHOLD:$i >> result.txt
-echo currently running $i
+gcc t2-lock-var.c -o t2-lock-var.out -Wall -pthread
+threshold=1000
+echo THRESHOLD:$threshold >> result.txt
+echo currently running $threshold
 for j in `seq 10`
 do
-echo trial:$j >> result.txt
-(time ./t2-lock-var.out $i) >> result.txt 2>&1
-echo >> result.txt
+(time ./t2-lock-var.out) >> result.txt 2>&1
 done
 echo "-------" >> result.txt
-done

@@ -1,9 +1,10 @@
-Q1. Determine the number of cores on your CPU
-by using `grep cpu.cores /proc/cpuinfo | sort -u `, 
-`cpu cores	: 4`
-(Reference: https://access.redhat.com/ja/solutions/2159401)
+t2-lock-var.c... actual code of shared counters
+t2-lock-var.out... compiled
+lock.sh... runs t2-lock-var.out multiple times, with NUM_THREADS and THRESHOLD varying.
+result.txt... some output (result of time command) of lock.sh is redirected to this file.
+result.csv... formatted result.txt to a csv file
+result.xlsx... drew graph out of result.csv
 
-Q2. 
-
-\nreal\t0m(\d+\.\d+)s\nuser\t0m(\d+\.\d+)s\nsys\t0m(\d+\.\d+)s
-$1,$2,$3
+lock.pdf... submitted report 
+lock.md... source file of lock.pdf
+images/... graphs

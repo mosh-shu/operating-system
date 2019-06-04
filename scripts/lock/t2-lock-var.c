@@ -1,12 +1,13 @@
+#define THRESHOLD 100000000
+
+#define NUM_THREADS 1000
+
 /* Threads with enough work to hopefully have something interesting happen. */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
 #include <pthread.h>
-
-#define NUM_THREADS 10
-// #define NUM_THREADS 4
 
 // int gcounter = 100000000; /* 1E8 */
 #define GCOUNTER 10000000
@@ -92,14 +93,12 @@ void *mythread(void *arg)
 
 int main(int argc, char *argv[])
 {
-    int threshold;
     pthread_t threads[NUM_THREADS];
     int rc;
     int *threadid;
 
-    threshold = (int)strtol(argv[1], NULL, 10);
     /* First, initialize our shared counter structure; 1000000 is the "threshold", how often the local values update the global */
-    init(&global_counter, threshold);
+    init(&global_counter, THRESHOLD);
 
     /* create our threads and fire them off */
     for (int i = 0; i < NUM_THREADS; i++)
